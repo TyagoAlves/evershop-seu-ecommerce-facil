@@ -55,9 +55,23 @@ const labels = `{
     '1:2:1': '1+2+1'
   }`;
 
-const patchJs = (file, transform, markers = [marker]) => {
+const readIfExists = (file) => {
   const target = path.resolve(process.cwd(), file);
-  const original = readFileSync(target, 'utf8');
+  try {
+    return { target, original: readFileSync(target, 'utf8') };
+  } catch (err) {
+    if (err && err.code === 'ENOENT') {
+      console.log(`[row-templates] ignorado (ausente): ${file}`);
+      return null;
+    }
+    throw err;
+  }
+};
+
+const patchJs = (file, transform, markers = [marker]) => {
+  const found = readIfExists(file);
+  if (!found) return;
+  const { target, original } = found;
   if ([...markers, ...legacyMarkers].some((item) => original.includes(item))) {
     console.log(`[row-templates] já aplicado: ${file}`);
     return;
@@ -72,8 +86,9 @@ const patchJs = (file, transform, markers = [marker]) => {
 };
 
 const patchReorder = (file, normalize) => {
-  const target = path.resolve(process.cwd(), file);
-  const original = readFileSync(target, 'utf8');
+  const found = readIfExists(file);
+  if (!found) return;
+  const { target, original } = found;
   if ([reorderMarker, ...legacyMarkers.filter((m) => m.includes('reorder'))].some((item) => original.includes(item))) {
     console.log(`[row-templates] reorder já aplicado: ${file}`);
     return;
@@ -311,7 +326,8 @@ const cssFile = path.resolve(
   process.cwd(),
   'node_modules/@evershop/evershop/dist/modules/base/pages/admin/all/shadcn.css'
 );
-let css = readFileSync(cssFile, 'utf8');
+let css;
+try { css = readFileSync(cssFile, 'utf8'); } catch (err) { if (err && err.code === 'ENOENT') { console.log('[row-templates] CSS ignorado (ausente)'); process.exit(0); } throw err; }
 if ([cssMarker, ...legacyCssMarkers].some((item) => css.includes(item))) {
   console.log('[row-templates] CSS já aplicado');
 } else {

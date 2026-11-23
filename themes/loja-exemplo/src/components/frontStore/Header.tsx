@@ -46,11 +46,22 @@ export function Header() {
           <HcLogo />
 
           <div className="le-header__nav-slot">
-            <Area id="headerMenuDesktop" noOuter isGlobal variant="desktop" />
+            <Area
+              id="headerMenuDesktop"
+              noOuter
+              isGlobal
+              editableInPageBuilder
+              variant="desktop"
+            />
           </div>
 
           <div className="le-header__actions">
-            <Area id="headerMiddleRight" className="le-header__tools" isGlobal />
+            <Area
+              id="headerMiddleRight"
+              className="le-header__tools"
+              isGlobal
+              editableInPageBuilder
+            />
             <a className="le-btn le-whatsapp le-header__cta" href={SITE.whatsappHref} target="_blank" rel="noreferrer">
               <HcIcon name="whatsapp" />
               <span>Solicitar orçamento</span>
@@ -75,6 +86,7 @@ export function Header() {
               id="headerMenuMobile"
               noOuter
               isGlobal
+              editableInPageBuilder
               variant="mobile"
               isOpen={open}
               onNavigate={() => setOpen(false)}

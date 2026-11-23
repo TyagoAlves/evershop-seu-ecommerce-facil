@@ -131,7 +131,7 @@ await checkFile(
   '[windows-seed] compileSwc.js',
   'node_modules/@evershop/evershop/dist/bin/lib/watch/compileSwc.js',
   [
-    '// PATCH-WINDOWS-HIDRO: compileSwc serializado',
+    '// PATCH-WINDOWS: compileSwc serializado',
     'const compileQueues = new Map();',
     'function serializeByDist(distPath, task)',
     'async function compileSwcUnlocked(srcPath, distPath)',

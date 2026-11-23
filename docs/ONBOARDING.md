@@ -188,7 +188,7 @@ Conferir depois dos seeds: nenhum produto, página ou texto da Exemplo aparece n
 
 - **Domínios futuros não definidos:** qualquer preenchimento antecipado de `domain`/`EVERSHOP_HOME_URL` criaria canonical e sitemap errados; a regra é manter `null` e pular o sitemap.
 - **`null` × `requiredForRender`:** o schema aceita `null`, mas o renderer exige vários campos não vazios. Empresas com dados incompletos ficam bloqueadas no `company:render` até o cliente fornecer o conteúdo real.
-- **Scripts pendentes de outros donos:** na leitura desta Fase 0, `scripts/seed-company.mjs`, `scripts/check-company-leaks.mjs` e a entrada `company:create` em `package.json` não estavam presentes; `schemas/catalog.schema.json` existe. Sem essas peças, a provisão automatizada e a auditoria de vazamento ficam incompletas.
+- **Auditoria de vazamento:** rode `npm run check:leaks -- --slug=<slug>` antes de publicar; o check deve passar sem achados para a empresa alvo.
 - **Tema fixo:** o `bootstrap.js` aponta para `themes/loja-exemplo/dist/components`, limitando a troca de tema por empresa.
 - **Divergência documental:** `README.md` lista seis widgets, enquanto `extensions/loja-exemplo-home/widgets.json`, o gerador e o contrato descrevem sete. O README não foi alterado.
 - **Custo operacional:** N instalações significam N processos, N DBs, N deploys e N backups; drift entre instalações exige disciplina de versionar só o template comum.
