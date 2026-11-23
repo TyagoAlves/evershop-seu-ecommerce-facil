@@ -1,0 +1,6 @@
+{
+  "methods": ["GET"],
+  "path": "/marketplaces/mercadolivre/oauth/callback",
+  "name": "Callback OAuth do Mercado Livre",
+  "access": "public"
+}

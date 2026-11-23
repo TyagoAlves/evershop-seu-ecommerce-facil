@@ -1,0 +1,41 @@
+type CompanyConfig {
+  schema: Int
+  slug: String
+  default: Boolean
+  domain: String
+  theme: String
+  extension: String
+  name: String
+  shortName: String
+  tagline: String
+  description: String
+  city: String
+  uf: String
+  region: String
+  phone: JSON
+  whatsapp: JSON
+  address: JSON
+  hours: String
+  mapsUrl: String
+  placeId: String
+  facebook: String
+  publicEmail: String
+  rating: JSON
+  nav: JSON
+  cmsSlugs: [String]
+  departments: [String]
+  differentials: JSON
+  hero: JSON
+  cta: JSON
+  location: JSON
+  brand: JSON
+  priceMode: String
+  seo: JSON
+  catalog: JSON
+  copyRight: String
+  logo: JSON
+}
+
+extend type Query {
+  companyConfig: CompanyConfig
+}

@@ -1,0 +1,65 @@
+/*
+ * company-overrides.css
+ *
+ * Substituições de marca por instalação.
+ * Este arquivo é intencionalmente inerte: nenhum token está ativo.
+ * Os valores atuais da Loja Exemplo permanecem como fallback em
+ * src/pages/all/theme.css. Para rebranding, descomente e preencha somente
+ * os tokens necessários nesta instalação.
+ */
+:root {
+  /* Escala de marca */
+  /* --hc-brand-50 */
+  /* --hc-brand-100 */
+  /* --hc-brand-200 */
+  /* --hc-brand-300 */
+  /* --hc-brand-400 */
+  /* --hc-brand-500 */
+  /* --hc-brand-600 */
+  /* --hc-brand-700 */
+  /* --hc-brand-800 */
+  /* --hc-brand-900 */
+  /* --hc-brand-950 */
+
+  /* Primária */
+  /* --hc-primary */
+  /* --hc-primary-hover */
+  /* --hc-primary-50 */
+  /* --hc-primary-100 */
+  /* --hc-primary-200 */
+  /* --hc-primary-300 */
+  /* --hc-primary-400 */
+
+  /* Superfícies e textos */
+  /* --hc-dark */
+  /* --hc-dark-deep */
+  /* --hc-login-dark */
+  /* --hc-white */
+  /* --hc-ink */
+  /* --hc-body */
+  /* --hc-body-soft */
+  /* --hc-muted */
+  /* --hc-muted-light */
+  /* --hc-light-text */
+  /* --hc-surface-soft */
+  /* --hc-surface-muted */
+  /* --hc-border */
+
+  /* Estados */
+  /* --hc-success */
+  /* --hc-success-hover */
+  /* --hc-success-text-hover */
+  /* --hc-danger */
+
+  /* Formas e layout */
+  /* --hc-radius-control */
+  /* --hc-radius-sm */
+  /* --hc-radius-md */
+  /* --hc-radius-card */
+  /* --hc-radius-lg */
+  /* --hc-radius-pill */
+  /* --hc-container-max */
+  /* --hc-container-pad */
+  /* --hc-container-pad-lg */
+  /* --hc-section-pad */
+}

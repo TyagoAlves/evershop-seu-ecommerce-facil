@@ -1,0 +1,415 @@
+[
+  {
+    "type": "simple",
+    "visibility": true,
+    "status": true,
+    "sku": "HC-LINHA-HIDRAULICA",
+    "name": "Linha hidráulica",
+    "url_key": "linha-hidraulica",
+    "price": 0,
+    "weight": 0,
+    "no_shipping_required": true,
+    "meta_title": "Linha hidráulica | Loja Exemplo",
+    "meta_description": "Tubos, conexões, torneiras, registros e bombas para instalações de água com segurança e durabilidade. Preço sob consulta pelo WhatsApp.",
+    "meta_keywords": "linha hidráulica, tubos, conexões, torneiras, Loja Exemplo",
+    "description": [
+      {
+        "id": "r__linha_hidraulica",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__linha_hidraulica",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Tubos, conexões, torneiras, registros e bombas para instalações de água com segurança e durabilidade."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Preço sob consulta: a variedade de marcas, bitolas e especificações muda conforme o projeto. Fale com a nossa equipe pelo WhatsApp para receber o orçamento."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ],
+    "qty": 9999,
+    "manage_stock": false,
+    "stock_availability": true,
+    "collections": [
+      "homepage"
+    ],
+    "category": "hidraulica",
+    "images": [
+      {
+        "url": "images/produto-hidraulica.svg",
+        "isMain": true
+      }
+    ]
+  },
+  {
+    "type": "simple",
+    "visibility": true,
+    "status": true,
+    "sku": "HC-LINHA-ELETRICA",
+    "name": "Linha elétrica",
+    "url_key": "linha-eletrica",
+    "price": 0,
+    "weight": 0,
+    "no_shipping_required": true,
+    "meta_title": "Linha elétrica | Loja Exemplo",
+    "meta_description": "Fios, cabos, disjuntores, tomadas e luminárias para instalações residenciais, comerciais e industriais. Preço sob consulta.",
+    "meta_keywords": "linha elétrica, fios, cabos, disjuntores, Loja Exemplo",
+    "description": [
+      {
+        "id": "r__linha_eletrica",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__linha_eletrica",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Fios, cabos, disjuntores, tomadas e luminárias para instalações residenciais, comerciais e industriais."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Preço sob consulta: informe a bitola, a corrente do circuito e a marca desejada. Orçamos pelo WhatsApp."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ],
+    "qty": 9999,
+    "manage_stock": false,
+    "stock_availability": true,
+    "collections": [
+      "homepage"
+    ],
+    "category": "eletrica",
+    "images": [
+      {
+        "url": "images/produto-eletrica.svg",
+        "isMain": true
+      }
+    ]
+  },
+  {
+    "type": "simple",
+    "visibility": true,
+    "status": true,
+    "sku": "HC-TINTAS-ACABAMENTO",
+    "name": "Tintas e acabamento",
+    "url_key": "tintas-e-acabamento",
+    "price": 0,
+    "weight": 0,
+    "no_shipping_required": true,
+    "meta_title": "Tintas e acabamento | Loja Exemplo",
+    "meta_description": "Tintas, massas, vernizes, pincéis e rolos para preparar e finalizar paredes, madeira e metal. Preço sob consulta.",
+    "meta_keywords": "tintas, acabamento, massa corrida, verniz, Loja Exemplo",
+    "description": [
+      {
+        "id": "r__tintas_acabamento",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__tintas_acabamento",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Tintas, massas, vernizes, pincéis e rolos para preparar e finalizar paredes, madeira e metal."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Preço sob consulta: traga a medida da área para calcularmos o rendimento e a quantidade de latas."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ],
+    "qty": 9999,
+    "manage_stock": false,
+    "stock_availability": true,
+    "collections": [
+      "homepage"
+    ],
+    "category": "tintas",
+    "images": [
+      {
+        "url": "images/produto-tintas.svg",
+        "isMain": true
+      }
+    ]
+  },
+  {
+    "type": "simple",
+    "visibility": true,
+    "status": true,
+    "sku": "HC-FERRAGENS-FIXADORES",
+    "name": "Ferragens e fixadores",
+    "url_key": "ferragens-e-fixadores",
+    "price": 0,
+    "weight": 0,
+    "no_shipping_required": true,
+    "meta_title": "Ferragens e fixadores | Loja Exemplo",
+    "meta_description": "Fechaduras, dobradiças, parafusos, pregos e buchas para todos os tipos de montagem e reparo. Preço sob consulta.",
+    "meta_keywords": "ferragens, fixadores, fechaduras, parafusos, Loja Exemplo",
+    "description": [
+      {
+        "id": "r__ferragens_fixadores",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__ferragens_fixadores",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Fechaduras, dobradiças, parafusos, pregos e buchas para todos os tipos de montagem e reparo."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Preço sob consulta: informe a aplicação e a quantidade para montarmos o orçamento."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ],
+    "qty": 9999,
+    "manage_stock": false,
+    "stock_availability": true,
+    "collections": [
+      "homepage"
+    ],
+    "category": "ferragens",
+    "images": [
+      {
+        "url": "images/produto-ferragens.svg",
+        "isMain": true
+      }
+    ]
+  },
+  {
+    "type": "simple",
+    "visibility": true,
+    "status": true,
+    "sku": "HC-FERRAMENTAS",
+    "name": "Ferramentas",
+    "url_key": "ferramentas",
+    "price": 0,
+    "weight": 0,
+    "no_shipping_required": true,
+    "meta_title": "Ferramentas | Loja Exemplo",
+    "meta_description": "Furadeiras, brocas, chaves, lixadeiras e medidores para o profissional e para quem faz em casa. Preço sob consulta.",
+    "meta_keywords": "ferramentas, furadeiras, brocas, lixadeiras, Loja Exemplo",
+    "description": [
+      {
+        "id": "r__ferramentas_linha",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__ferramentas_linha",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Furadeiras, brocas, chaves, lixadeiras e medidores para o profissional e para quem faz em casa."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Preço sob consulta: conte com a nossa equipe para montar um kit conforme o tipo de serviço."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ],
+    "qty": 9999,
+    "manage_stock": false,
+    "stock_availability": true,
+    "collections": [
+      "homepage"
+    ],
+    "category": "ferramentas",
+    "images": [
+      {
+        "url": "images/produto-ferramentas.svg",
+        "isMain": true
+      }
+    ]
+  },
+  {
+    "type": "simple",
+    "visibility": true,
+    "status": true,
+    "sku": "HC-MATERIAIS-COBERTURAS",
+    "name": "Materiais e coberturas",
+    "url_key": "materiais-e-coberturas",
+    "price": 0,
+    "weight": 0,
+    "no_shipping_required": true,
+    "meta_title": "Materiais e coberturas | Loja Exemplo",
+    "meta_description": "Cimento, areia, brita, tijolos, telhas e calhas para a estrutura e a cobertura da sua obra. Preço sob consulta.",
+    "meta_keywords": "materiais de construção, coberturas, cimento, telhas, Loja Exemplo",
+    "description": [
+      {
+        "id": "r__materiais_coberturas",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__materiais_coberturas",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Cimento, areia, brita, tijolos, telhas e calhas para a estrutura e a cobertura da sua obra."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Preço sob consulta: informe o volume e o local de entrega para calcularmos o orçamento."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ],
+    "qty": 9999,
+    "manage_stock": false,
+    "stock_availability": true,
+    "collections": [
+      "homepage"
+    ],
+    "category": "materiais-de-construcao",
+    "images": [
+      {
+        "url": "images/produto-materiais.svg",
+        "isMain": true
+      }
+    ]
+  },
+  {
+    "type": "simple",
+    "visibility": true,
+    "status": true,
+    "sku": "HC-ORCAMENTO",
+    "name": "Solicitar orçamento",
+    "url_key": "solicitar-orcamento",
+    "price": 0,
+    "weight": 0,
+    "no_shipping_required": true,
+    "meta_title": "Solicitar orçamento | Loja Exemplo",
+    "meta_description": "Monte seu orçamento de materiais de construção com a equipe da Loja Exemplo pelo WhatsApp.",
+    "meta_keywords": "orçamento, materiais de construção, WhatsApp, Loja Exemplo",
+    "description": [
+      {
+        "id": "r__orcamento_produto",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__orcamento_produto",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Não encontrou o que precisa ou quer comparar opções? Envie sua lista pelo WhatsApp e nossa equipe monta o orçamento."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Retirada nas lojas 1 e 2 ou entrega na região de Sua Cidade, conforme disponibilidade."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ],
+    "qty": 9999,
+    "manage_stock": false,
+    "stock_availability": true,
+    "collections": [
+      "homepage"
+    ],
+    "category": "orcamento-e-entrega",
+    "images": [
+      {
+        "url": "images/produto-orcamento.svg",
+        "isMain": true
+      }
+    ]
+  }
+]

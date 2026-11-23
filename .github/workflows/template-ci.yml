@@ -1,0 +1,187 @@
+# CI somente: sem deploy, sem npm publish, sem changeset e sem tocar em pb-draft-1.
+name: Template CI
+
+on:
+  pull_request:
+  push:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: template-ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ci:
+    name: Node 20 · template white-label
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+
+    # Necessário para `evershop build`/`npm start` (o start aplica migrações).
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_DB: loja-exemplo
+          POSTGRES_USER: loja-exemplo
+          POSTGRES_PASSWORD: loja-exemplo-ci
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U loja-exemplo -d loja-exemplo"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+
+    env:
+      CI: 'true'
+      COMPANY_SLUG: loja-exemplo
+      DB_HOST: postgres
+      DB_PORT: '5432'
+      DB_NAME: loja-exemplo
+      DB_USER: loja-exemplo
+      DB_PASSWORD: loja-exemplo-ci
+      DB_SSLMODE: disable
+      PORT: '3001'
+      EVERSHOP_HOME_URL: http://localhost:3001
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Node 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: npm
+
+      - name: Instalar dependências
+        # O postinstall reaplica os patches idempotentes em node_modules.
+        run: npm ci
+
+      - name: Renderizar manifesto da empresa
+        # Depende de companies/loja-exemplo.json, companies/schema.json,
+        # scripts/render-company-config.mjs e do script "company:render" no package.json
+        # (agente config/manifesto). Descomente se precisar rodar antes da entrega:
+        # continue-on-error: true
+        run: npm run company:render
+
+      - name: Renderizar sitemap white-label
+        # Depende de scripts/render-company-sitemap.mjs (agente SEO/domínio),
+        # que deve gerar public/sitemap*.xml sem /pt-br.
+        # Descomente se precisar rodar antes da entrega:
+        # continue-on-error: true
+        run: node ./scripts/render-company-sitemap.mjs
+
+      - name: Verificar patches idempotentes
+        # Depende de scripts/patch-verify.mjs e do script "patch:verify" no package.json
+        # (agente patches pt-BR). Descomente se precisar rodar antes da entrega:
+        # continue-on-error: true
+        run: npm run patch:verify
+
+      - name: Auditar vazamento entre empresas
+        # Depende de scripts/check-company-leaks.mjs e do script "check:leaks" no package.json
+        # (agente auditoria vazamento). Descomente se precisar rodar antes da entrega:
+        # continue-on-error: true
+        run: npm run check:leaks -- --slug loja-exemplo
+
+      # Fase 3 (marketplaces): verificações locais, somente leitura, sem build/seed/rede.
+      - name: Marketplaces — segredos versionados
+        run: npm run mp:secrets
+
+      - name: Marketplaces — configuração por empresa
+        # Depende de scripts/validate-marketplaces-config.mjs (agente 3).
+        run: npm run mp:config
+
+      - name: Marketplaces — sintaxe e testes locais
+        run: npm run mp:check
+
+      - name: Build
+        run: npm run build
+
+      - name: Smoke (npm start + curl)
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          BASE="http://localhost:${PORT}"
+          LOG="${RUNNER_TEMP}/evershop-smoke.log"
+          PIDFILE="${RUNNER_TEMP}/evershop-smoke.pid"
+
+          nohup npm start > "$LOG" 2>&1 &
+          echo $! > "$PIDFILE"
+
+          ready=0
+          for _ in $(seq 1 90); do
+            if curl -fsS -o /dev/null "${BASE}/"; then
+              ready=1
+              break
+            fi
+            if ! kill -0 "$(cat "$PIDFILE")" 2>/dev/null; then
+              echo "npm start morreu durante a inicialização."
+              tail -n 200 "$LOG" || true
+              exit 1
+            fi
+            sleep 2
+          done
+
+          if [ "$ready" -ne 1 ]; then
+            echo "Servidor não ficou pronto em 180s."
+            tail -n 200 "$LOG" || true
+            exit 1
+          fi
+
+          curl -fsSL "${BASE}/" -o "${RUNNER_TEMP}/home.html"
+
+          # WhatsApp esperado no manifesto da loja-exemplo: 5500000000000.
+          if ! grep -q '5500000000000' "${RUNNER_TEMP}/home.html"; then
+            echo "WhatsApp 5500000000000 não encontrado na home."
+            exit 1
+          fi
+
+          for path in /admin /products; do
+            code="$(curl -sS -L -o /dev/null -w '%{http_code}' "${BASE}${path}")"
+            echo "GET ${path}: HTTP ${code}"
+            case "$code" in
+              2??|3??) ;;
+              *) echo "Falha no smoke de ${path}"; exit 1 ;;
+            esac
+          done
+
+          curl -fsSL "${BASE}/sitemap.xml" -o "${RUNNER_TEMP}/sitemap-served.xml"
+
+          if grep -q '/pt-br' "${RUNNER_TEMP}/sitemap-served.xml"; then
+            echo "Sitemap servido contém /pt-br."
+            exit 1
+          fi
+
+          if grep -q '/pt-br' public/sitemap*.xml; then
+            echo "Arquivos public/sitemap*.xml contêm /pt-br."
+            exit 1
+          fi
+
+          if ! grep -q '<loc>' "${RUNNER_TEMP}/sitemap-served.xml"; then
+            echo "Sitemap servido não contém URLs."
+            exit 1
+          fi
+
+          echo "Smoke OK: /, /admin, /products, sitemap sem /pt-br e WhatsApp presente."
+
+      - name: Encerrar servidor e exibir log
+        if: always()
+        shell: bash
+        run: |
+          LOG="${RUNNER_TEMP}/evershop-smoke.log"
+          PIDFILE="${RUNNER_TEMP}/evershop-smoke.pid"
+
+          if [ -f "$PIDFILE" ]; then
+            PID="$(cat "$PIDFILE")"
+            kill "$PID" 2>/dev/null || true
+            pkill -P "$PID" 2>/dev/null || true
+          fi
+
+          if [ -f "$LOG" ]; then
+            echo "----- evershop smoke log -----"
+            tail -n 200 "$LOG" || true
+          fi

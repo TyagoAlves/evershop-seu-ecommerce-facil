@@ -1,0 +1,369 @@
+{
+  "categories": [
+    {
+      "name": "Hidráulica",
+      "url_key": "hidraulica",
+      "comment_policy": "moderated",
+      "status": 1,
+      "short_description": "Dicas sobre tubulações, conexões e instalações de água."
+    },
+    {
+      "name": "Elétrica",
+      "url_key": "eletrica",
+      "comment_policy": "moderated",
+      "status": 1,
+      "short_description": "Orientações para instalações elétricas seguras."
+    },
+    {
+      "name": "Tintas",
+      "url_key": "tintas",
+      "comment_policy": "moderated",
+      "status": 1,
+      "short_description": "Acabamento, preparo de superfície e escolha de tintas."
+    },
+    {
+      "name": "Obras",
+      "url_key": "obras",
+      "comment_policy": "moderated",
+      "status": 1,
+      "short_description": "Planejamento e materiais para reformas e construção."
+    },
+    {
+      "name": "Coberturas",
+      "url_key": "coberturas",
+      "comment_policy": "moderated",
+      "status": 1,
+      "short_description": "Telhados, calhas e impermeabilização."
+    },
+    {
+      "name": "Ferramentas",
+      "url_key": "ferramentas",
+      "comment_policy": "moderated",
+      "status": 1,
+      "short_description": "Kits e equipamentos para pequenos reparos."
+    }
+  ],
+  "tags": [
+    {
+      "name": "Dicas",
+      "url_key": "dicas"
+    },
+    {
+      "name": "Reforma",
+      "url_key": "reforma"
+    },
+    {
+      "name": "Segurança",
+      "url_key": "seguranca"
+    },
+    {
+      "name": "Acabamento",
+      "url_key": "acabamento"
+    }
+  ],
+  "posts": [
+    {
+      "name": "Como escolher os tubos certos para sua instalação hidráulica",
+      "url_key": "como-escolher-tubos-hidraulicos",
+      "status": 1,
+      "category": "Hidráulica",
+      "tags": [
+        "Dicas"
+      ],
+      "short_description": "PVC, PPR ou cobre? Entenda as diferenças e escolha o material ideal para cada tipo de instalação.",
+      "thumbnail": "images/blog-hidraulica.svg",
+      "meta_title": "Como escolher tubos hidráulicos | Loja Exemplo",
+      "meta_description": "PVC, PPR ou cobre? Entenda as diferenças e escolha o material ideal para cada tipo de instalação hidráulica.",
+      "content": [
+        {
+          "id": "r1",
+          "size": 1,
+          "columns": [
+            {
+              "id": "c1",
+              "size": 1,
+              "data": {
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "A escolha do tubo influencia diretamente na durabilidade e na segurança da instalação. Antes de comprar, defina onde a tubulação será usada, a pressão de trabalho e se haverá água quente."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Tubos PVC são muito usados em água fria e esgoto: são leves, econômicos e fáceis de instalar. Já o PPR é indicado para água quente e fria, com conexões por fusão que reduzem o risco de vazamentos. O cobre é resistente e tradicional, mas exige mão de obra especializada."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Não misture sistemas sem os adaptadores corretos e confira sempre o diâmetro nominal e a pressão indicados na embalagem. Em caso de dúvida, traga as medidas do local até a loja: ajudamos a montar a lista de materiais."
+                    },
+                    "size": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Disjuntores e fios: como dimensionar uma instalação elétrica segura",
+      "url_key": "disjuntores-e-fios-seguranca-eletrica",
+      "status": 1,
+      "category": "Elétrica",
+      "tags": [
+        "Segurança",
+        "Dicas"
+      ],
+      "short_description": "Bitola dos fios, corrente do disjuntor e aterramento: os pontos que não podem ficar de fora de uma obra.",
+      "thumbnail": "images/blog-eletrica.svg",
+      "meta_title": "Como dimensionar uma instalação elétrica segura | Loja Exemplo",
+      "meta_description": "Bitola dos fios, corrente do disjuntor e aterramento: os pontos que não podem ficar de fora de uma obra.",
+      "content": [
+        {
+          "id": "r2",
+          "size": 1,
+          "columns": [
+            {
+              "id": "c2",
+              "size": 1,
+              "data": {
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Uma instalação elétrica segura começa pelo dimensionamento correto dos circuitos. A bitola do fio precisa comportar a corrente prevista sem aquecer, e o disjuntor deve proteger esse circuito contra sobrecargas e curtos-circuitos."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Circuitos de iluminação, tomadas e aparelhos de grande porte devem ser separados. Em áreas úmidas, como cozinhas e banheiros, use dispositivos de proteção adequados e siga as exigências da norma ABNT NBR 5410."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Nunca reaproveite emendas improvisadas e procure um profissional qualificado para executar o serviço. Aqui você encontra fios, cabos, disjuntores, quadros e acessórios para comprar com a especificação correta."
+                    },
+                    "size": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Tinta acrílica ou látex: qual usar em cada ambiente?",
+      "url_key": "tinta-acrilica-ou-latex",
+      "status": 1,
+      "category": "Tintas",
+      "tags": [
+        "Acabamento",
+        "Dicas"
+      ],
+      "short_description": "Entenda quando vale usar cada tipo de tinta e como preparar a parede para um acabamento melhor.",
+      "thumbnail": "images/blog-tintas.svg",
+      "meta_title": "Tinta acrílica ou látex | Loja Exemplo",
+      "meta_description": "Entenda quando vale usar tinta acrílica ou látex e como preparar a parede para um acabamento melhor.",
+      "content": [
+        {
+          "id": "r3",
+          "size": 1,
+          "columns": [
+            {
+              "id": "c3",
+              "size": 1,
+              "data": {
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "A tinta acrílica é mais resistente à umidade e à lavagem, por isso é boa escolha para cozinhas, banheiros, lavanderias e áreas externas. O látex tem acabamento mais fosco e é bastante usado em salas e quartos."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Antes de pintar, limpe a superfície, corrija rachaduras e aplique o fundo preparador indicado. Duas demãos fins costumam dar melhor resultado do que uma camada muito grossa."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Considere também o rendimento do produto e a cor escolhida: tons intensos podem precisar de mais demãos. Traga a medida da parede para calcularmos a quantidade aproximada de latas."
+                    },
+                    "size": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Checklist de materiais para começar uma reforma",
+      "url_key": "checklist-materiais-para-reforma",
+      "status": 1,
+      "category": "Obras",
+      "tags": [
+        "Reforma",
+        "Dicas"
+      ],
+      "short_description": "Uma lista simples para não esquecer os itens básicos antes de começar a obra.",
+      "thumbnail": "images/blog-obras.svg",
+      "meta_title": "Checklist de materiais para reforma | Loja Exemplo",
+      "meta_description": "Uma lista simples para não esquecer os itens básicos antes de começar uma reforma.",
+      "content": [
+        {
+          "id": "r4",
+          "size": 1,
+          "columns": [
+            {
+              "id": "c4",
+              "size": 1,
+              "data": {
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Organize a reforma por etapas: demolição, alvenaria, instalações, reboco, pintura e acabamento. Para cada etapa, anote os materiais e as ferramentas necessárias."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Na parte estrutural, entram cimento, areia, brita, tijolos ou blocos. Nas instalações, tubulações, fios, cabos, tomadas e registros. Na finalização, massa, tinta, pincéis, rodapés e ferragens."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Compre o essencial primeiro e deixe os acabamentos para depois das medições finais. Monte a lista com a nossa equipe: indicamos quantidades e opções que cabem no seu orçamento."
+                    },
+                    "size": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Como evitar infiltrações na cobertura",
+      "url_key": "como-evitar-infiltracoes-na-cobertura",
+      "status": 1,
+      "category": "Coberturas",
+      "tags": [
+        "Dicas"
+      ],
+      "short_description": "Telhas, calhas e impermeabilização: os cuidados que protegem o telhado e o interior da casa.",
+      "thumbnail": "images/blog-coberturas.svg",
+      "meta_title": "Como evitar infiltrações na cobertura | Loja Exemplo",
+      "meta_description": "Telhas, calhas e impermeabilização: os cuidados que protegem o telhado e o interior da casa.",
+      "content": [
+        {
+          "id": "r5",
+          "size": 1,
+          "columns": [
+            {
+              "id": "c5",
+              "size": 1,
+              "data": {
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "A maior parte das infiltrações começa em pontos simples: telha deslocada, rufo mal fixado ou calha entupida. Uma inspeção periódica evita danos maiores no forro e nas paredes."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Limpe as calhas regularmente, verifique a inclinação das telhas e confira a vedação em torno de chaminés, claraboias e passagens de tubos."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Ao trocar a cobertura, escolha telhas e acessórios do mesmo sistema e conte com mão de obra especializada. Aqui você encontra telhas, cumeeiras, calhas, rufos e mantas impermeabilizantes."
+                    },
+                    "size": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Ferramentas essenciais para pequenos reparos em casa",
+      "url_key": "ferramentas-essenciais-pequenos-reparos",
+      "status": 1,
+      "category": "Ferramentas",
+      "tags": [
+        "Dicas"
+      ],
+      "short_description": "Um kit enxuto que resolve a maior parte dos consertos do dia a dia.",
+      "thumbnail": "images/blog-ferramentas.svg",
+      "meta_title": "Ferramentas essenciais para pequenos reparos | Loja Exemplo",
+      "meta_description": "Um kit enxuto que resolve a maior parte dos consertos do dia a dia.",
+      "content": [
+        {
+          "id": "r6",
+          "size": 1,
+          "columns": [
+            {
+              "id": "c6",
+              "size": 1,
+              "data": {
+                "blocks": [
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Um bom conjunto básico inclui chave de fenda e Philips, alicate, chave inglesa, fita métrica, nível, martelo e uma furadeira com brocas para madeira, metal e alvenaria."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Vale acrescentar estilete, lixa, espátula e uma fita isolante. Guarde tudo em uma caixa organizada e mantenha as ferramentas limpas para aumentar a vida útil."
+                    },
+                    "size": 1
+                  },
+                  {
+                    "type": "paragraph",
+                    "data": {
+                      "text": "Para trabalhos maiores, alugar ou comprar uma lixadeira e uma serra pode valer a pena. Conte com a nossa equipe para montar um kit conforme o tipo de serviço que você pretende fazer."
+                    },
+                    "size": 1
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

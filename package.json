@@ -1,0 +1,46 @@
+{
+  "name": "evershop-seu-ecommerce-facil",
+  "version": "0.1.0",
+  "description": "Template genérico de loja virtual em português brasileiro com EverShop.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "postinstall": "node ./scripts/patch-windows-seed.mjs && node ./scripts/patch-ptbr-core.mjs && node ./scripts/patch-build-env.mjs && node ./scripts/patch-image-root-assets.mjs && node ./scripts/patch-tailwind-sources.mjs && node ./scripts/patch-baseui-icons.mjs && node ./scripts/patch-row-templates.mjs",
+    "setup": "node ./scripts/install-headless.mjs",
+    "start": "evershop start",
+    "company:render": "node ./scripts/render-company-config.mjs",
+    "company:create": "node ./scripts/company-create.mjs",
+    "patch:verify": "node ./scripts/patch-verify.mjs",
+    "check:leaks": "node ./scripts/check-company-leaks.mjs",
+    "sitemap:render": "node ./scripts/render-company-sitemap.mjs",
+    "build": "npm run company:render && node ./scripts/compile-theme.mjs && node ./scripts/compile-extension.mjs && evershop build",
+    "theme:compile": "node ./scripts/compile-theme.mjs && node ./scripts/compile-extension.mjs",
+    "seed:home": "node ./scripts/seed-homepage-widgets.mjs",
+    "dev": "evershop dev",
+    "user:create": "evershop user:create",
+    "seed": "evershop seed && node ./scripts/seed-metadata-cms.mjs",
+    "seed:meta": "node ./scripts/seed-metadata-cms.mjs",
+    "theme:active": "evershop theme:active",
+    "theme:twizz": "evershop theme:twizz",
+    "theme:create": "evershop theme:create",
+    "theme:status": "evershop theme:status",
+    "theme:uninstall": "evershop theme:uninstall",
+    "theme:export-content": "evershop theme:export-content",
+    "mp:check": "node ./scripts/check-marketplace-secrets.mjs --check",
+    "mp:config": "node ./scripts/validate-marketplaces-config.mjs",
+    "mp:secrets": "node ./scripts/check-marketplace-secrets.mjs --secrets"
+  },
+  "dependencies": {
+    "@evershop/evershop": "2.4.0"
+  },
+  "devDependencies": {
+    "@parcel/watcher": "2.6.0",
+    "@types/config": "3.3.5",
+    "@types/express": "5.0.6",
+    "@types/node": "26.6.6",
+    "@types/pg": "8.23.1",
+    "@types/react": "19.3.0",
+    "execa": "10.2.1",
+    "typescript": "7.0.2"
+  }
+}

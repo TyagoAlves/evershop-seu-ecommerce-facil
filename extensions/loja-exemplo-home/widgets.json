@@ -1,0 +1,157 @@
+[
+  {
+    "type": "hc_menu",
+    "name": "Menu – Loja Exemplo",
+    "description": "Links de navegação do cabeçalho e do menu mobile.",
+    "category": "navigation",
+    "icon": "Menu",
+    "sortOrder": 5,
+    "settings": {
+      "links": [
+        { "id": "nav-1", "label": "Início", "href": "/", "showInDesktop": true },
+        { "id": "nav-2", "label": "Departamentos", "href": "/departamentos", "showInDesktop": true },
+        { "id": "nav-3", "label": "Produtos", "href": "/products", "showInDesktop": true },
+        { "id": "nav-4", "label": "Blog", "href": "/blog", "showInDesktop": true },
+        { "id": "nav-5", "label": "Empresa", "href": "/empresa", "showInDesktop": true },
+        { "id": "nav-6", "label": "Contato", "href": "/contato", "showInDesktop": false }
+      ]
+    }
+  },
+  {
+    "type": "hc_hero",
+    "name": "Hero – Loja Exemplo",
+    "description": "Bloco principal da home com chamada para o WhatsApp e indicadores.",
+    "category": "content",
+    "icon": "LayoutDashboard",
+    "sortOrder": 10,
+    "settings": {
+      "backgroundImage": null,
+      "backgroundOpacity": 45,
+      "eyebrow": "Sua Cidade · Sua Cidade – UF",
+      "titleBefore": "Tudo para sua obra com ",
+      "titleAccent": "preço justo",
+      "titleAfter": " e atendimento de verdade.",
+      "text": "Materiais de construção, hidráulica, elétrica, tintas, ferragens e ferramentas nas lojas 1 e 2, no mesmo endereço em Sua Cidade.",
+      "primaryLabel": "Pedir orçamento pelo WhatsApp",
+      "primaryHref": "https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20produtos%20e%20pre%C3%A7os.",
+      "secondaryLabel": "Ver produtos",
+      "secondaryHref": "/products",
+      "stats": [
+        { "id": "stat-1", "value": "4,5★", "label": "avaliação no Google" },
+        { "id": "stat-2", "value": "9", "label": "departamentos" },
+        { "id": "stat-3", "value": "2", "label": "lojas no mesmo endereço" },
+        { "id": "stat-4", "value": "7", "label": "dias de funcionamento" }
+      ]
+    }
+  },
+  {
+    "type": "hc_departments",
+    "name": "Departamentos – Loja Exemplo",
+    "description": "Grade de categorias da home com dados do catálogo.",
+    "category": "content",
+    "icon": "Grid2X2",
+    "sortOrder": 20,
+    "settings": {
+      "eyebrow": "Nossos departamentos",
+      "title": "Tudo o que você precisa, em um só lugar",
+      "description": "Uma loja completa para construir, reformar e manter — com orientação na hora da compra.",
+      "linkLabel": "Ver todos",
+      "linkHref": "/departamentos",
+      "limit": 9
+    }
+  },
+  {
+    "type": "hc_featured_products",
+    "name": "Produtos em destaque – Loja Exemplo",
+    "description": "Grade de produtos sob consulta com dados do catálogo.",
+    "category": "commerce",
+    "icon": "Package",
+    "sortOrder": 30,
+    "settings": {
+      "eyebrow": "Linhas em destaque",
+      "title": "Escolha por departamento, compre com confiança",
+      "description": "Preços sob consulta: a variedade de marcas e especificações muda conforme o projeto. Monte sua lista com a nossa equipe.",
+      "linkLabel": "Ver catálogo",
+      "linkHref": "/products",
+      "limit": 6
+    }
+  },
+  {
+    "type": "hc_differentials",
+    "name": "Diferenciais – Loja Exemplo",
+    "description": "Quatro motivos para comprar na Loja Exemplo.",
+    "category": "content",
+    "icon": "BadgeCheck",
+    "sortOrder": 40,
+    "settings": {
+      "eyebrow": "Por que a Exemplo",
+      "title": "Preço justo, variedade e gente que ajuda",
+      "items": [
+        {
+          "id": "diff-1",
+          "icon": "check",
+          "title": "Os menores preços",
+          "text": "Preços competitivos para você comprar mais com o seu orçamento, sem abrir mão da qualidade."
+        },
+        {
+          "id": "diff-2",
+          "icon": "star",
+          "title": "Atendimento que ajuda",
+          "text": "Nossa equipe conhece os produtos e ajuda a escolher o material certo para a sua obra."
+        },
+        {
+          "id": "diff-3",
+          "icon": "truck",
+          "title": "Tudo no mesmo lugar",
+          "text": "Hidráulica, elétrica, tintas, ferragens, ferramentas e materiais de construção em duas lojas."
+        },
+        {
+          "id": "diff-4",
+          "icon": "pin",
+          "title": "Aqui na sua região",
+          "text": "Localização fácil em Sua Cidade, com retirada nas lojas 1 e 2 e entrega combinada pelo WhatsApp."
+        }
+      ]
+    }
+  },
+  {
+    "type": "hc_cta",
+    "name": "CTA WhatsApp – Loja Exemplo",
+    "description": "Bloco de orçamento sem compromisso pelo WhatsApp.",
+    "category": "marketing",
+    "icon": "MessageCircle",
+    "sortOrder": 50,
+    "settings": {
+      "eyebrow": "Orçamento sem compromisso",
+      "title": "Precisa de algum material? A gente te ajuda.",
+      "text": "Envie sua lista pelo WhatsApp, tiramos as dúvidas e combinamos a retirada nas lojas 1 e 2 ou a entrega na região de Sua Cidade.",
+      "buttonLabel": "Falar com a Loja Exemplo",
+      "buttonHref": "https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20produtos%20e%20pre%C3%A7os."
+    }
+  },
+  {
+    "type": "hc_location",
+    "name": "Localização – Loja Exemplo",
+    "description": "Endereço, horários e links de contato da loja.",
+    "category": "content",
+    "icon": "MapPin",
+    "sortOrder": 60,
+    "settings": {
+      "eyebrow": "Onde estamos",
+      "title": "Venha nos visitar",
+      "address": "Rua Exemplo, 123 — Centro, Sua Cidade – UF, CEP 00000-000",
+      "meta": [
+        { "id": "meta-1", "icon": "clock", "text": "Seg a Sáb, 8h às 18h · Dom, 9h às 12h" },
+        { "id": "meta-2", "icon": "phone", "text": "(00) 0000-0000" },
+        { "id": "meta-3", "icon": "star", "text": "4,5 no Google · 13 avaliações" }
+      ],
+      "mapsLabel": "Abrir no Google Maps",
+      "mapsHref": "https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+100+Centro+Sao+Paulo+SP",
+      "whatsappLabel": "WhatsApp (00) 00000-0000",
+      "whatsappHref": "https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20produtos%20e%20pre%C3%A7os.",
+      "cardTitle": "Loja Exemplo",
+      "cardLine1": "Rua Exemplo, 100 - Centro",
+      "cardLine2": "Centro — Sua Cidade/UF"
+    }
+  }
+]

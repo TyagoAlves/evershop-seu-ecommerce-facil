@@ -1,0 +1,154 @@
+"""
+Status operacional e somente leitura da integração com Mercado Livre e Shopee BR.
+
+Este tipo existe apenas no schema administrativo (sufixo `.admin.graphql`).
+Nenhum campo devolve token, segredo, chave de idempotência, payload bruto,
+preço inventado ou dado de comprador: apenas estados, contadores e datas.
+"""
+type MarketplaceStatus {
+  """Extensão habilitada na configuração da instalação (padrão: não)."""
+  extensionEnabled: Boolean!
+
+  """Arquivo não secreto da empresa presente e legível."""
+  companyConfigAvailable: Boolean!
+
+  """Integração habilitada na configuração da empresa (padrão: não)."""
+  companyEnabled: Boolean!
+
+  """Todas as tabelas da extensão puderam ser consultadas."""
+  tablesAvailable: Boolean!
+
+  """Status de cada marketplace atendido pela integração."""
+  marketplaces: [MarketplaceStatusItem!]!
+
+  """Avisos genéricos em pt-BR, sem segredos nem dados pessoais."""
+  warnings: [String!]!
+
+  """Instante da leitura, em ISO 8601."""
+  generatedAt: String!
+}
+
+"""Status de um marketplace na empresa ativa."""
+type MarketplaceStatusItem {
+  """Identificador técnico: `mercadolivre` ou `shopee`."""
+  marketplace: String!
+
+  """Configuração da empresa habilita este marketplace."""
+  enabled: Boolean!
+
+  """Chave `publishAllowed` da configuração não secreta."""
+  publishAllowed: Boolean!
+
+  """Allowlist `publishSkus`; lista vazia nunca significa "todos os SKUs"."""
+  publishSkus: [String!]!
+
+  """Quantidade de SKUs na allowlist."""
+  publishSkuCount: Int!
+
+  """Contas com status `connected`, sem credenciais."""
+  accounts: [MarketplaceStatusAccount!]!
+
+  """Estado dos tokens por conta e tipo, sem valores nem envelopes cifrados."""
+  tokens: [MarketplaceStatusToken!]!
+
+  """Contadores agregados das tabelas da extensão."""
+  counts: MarketplaceStatusCounts!
+
+  """Data/hora da última sincronização registrada, em ISO 8601."""
+  lastSyncAt: String
+
+  """As tabelas deste marketplace puderam ser consultadas."""
+  tablesAvailable: Boolean!
+}
+
+"""Conta conectada de um marketplace (apenas identificadores e status)."""
+type MarketplaceStatusAccount {
+  """Identificador interno da conta; não é uma credencial."""
+  accountId: ID
+
+  """Identificador técnico do marketplace."""
+  marketplace: String!
+
+  """Identificador do vendedor no marketplace."""
+  sellerId: String
+
+  """Identificador da loja no marketplace, quando houver."""
+  shopId: String
+
+  """Site/região informado pelo marketplace, quando houver."""
+  siteId: String
+
+  """Status da conta no banco local, por exemplo `connected`."""
+  status: String!
+
+  """Última atualização de cursor de sincronização desta conta, em ISO 8601."""
+  lastSyncAt: String
+}
+
+"""
+Estado de um token por conta. `tokenType` é o tipo (`access` ou `refresh`),
+nunca o valor do token. Não há campo com o token cifrado nem com sua chave.
+"""
+type MarketplaceStatusToken {
+  """Conta proprietária do registro."""
+  accountId: ID
+
+  """Identificador técnico do marketplace."""
+  marketplace: String!
+
+  """Identificador do vendedor para conferência visual."""
+  sellerId: String
+
+  """Tipo do token: `access` ou `refresh`."""
+  tokenType: String!
+
+  """Estado em pt-BR: disponivel, ausente, expirado, em_uso ou indisponivel."""
+  status: String!
+
+  """Geração do token; número de versão, sem valor secreto."""
+  generation: Int
+}
+
+"""Contadores agregados; nenhuma linha ou payload é devolvido."""
+type MarketplaceStatusCounts {
+  """Contas `connected` do marketplace."""
+  accounts: Int!
+
+  """Registros de token (sem ler `encrypted_value`)."""
+  tokens: Int!
+
+  """Anúncios locais."""
+  listings: Int!
+
+  """Anúncios com `last_error` preenchido."""
+  listingsWithError: Int!
+
+  """Pedidos importados."""
+  orders: Int!
+
+  """Eventos de webhook registrados."""
+  events: Int!
+
+  """Eventos pendentes (`processed_at` vazio e status diferente de `failed`)."""
+  eventsPending: Int!
+
+  """Eventos falhos ou com `last_error` preenchido."""
+  eventsWithError: Int!
+
+  """Operações na fila de saída."""
+  outbox: Int!
+
+  """Operações `pending` ou `processing`."""
+  outboxPending: Int!
+
+  """Operações com `last_error` preenchido (a falha volta para `pending`)."""
+  outboxWithError: Int!
+
+  """Estados OAuth ainda não consumidos; o valor do `state` nunca é lido."""
+  oauthStatesPending: Int!
+}
+
+extend type Query {
+  """Painel administrativo: status somente leitura das integrações."""
+  marketplaceStatus: MarketplaceStatus
+}

@@ -1,0 +1,528 @@
+[
+  {
+    "name": "Women",
+    "url_key": "women",
+    "status": 0
+  },
+  {
+    "name": "Men",
+    "url_key": "men",
+    "status": 0
+  },
+  {
+    "name": "Kids",
+    "url_key": "kids",
+    "status": 0
+  },
+  {
+    "name": "Hidráulica",
+    "url_key": "hidraulica",
+    "status": 1,
+    "image": "images/categoria-hidraulica.svg",
+    "short_description": "Tubos, conexões e acessórios para levar água até onde você precisar.",
+    "meta_title": "Hidráulica em São Paulo | Loja Exemplo",
+    "meta_description": "Tubos, conexões, torneiras, registros, bombas e filtros em São Paulo - SP. Orientação na hora da compra e os menores preços.",
+    "meta_keywords": "hidráulica, tubos, conexões, torneiras, bombas, São Paulo - SP",
+    "description": [
+      {
+        "id": "r__hidraulica",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__hidraulica",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Hidráulica",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Seja para uma reforma pequena ou uma instalação completa, aqui você encontra tubos, conexões e acessórios hidráulicos das principais marcas do mercado, com orientação na hora da compra."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Tubos e conexões PVC, PPR e cobre",
+                      "Torneiras, registros e válvulas",
+                      "Bombas, filtros e caixas d'água",
+                      "Ralos, sifões e acessórios"
+                    ]
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Precisa de ajuda para escolher? Fale com a nossa equipe pelo WhatsApp e monte a lista de materiais com a especificação certa."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Elétrica",
+    "url_key": "eletrica",
+    "status": 1,
+    "image": "images/categoria-eletrica.svg",
+    "short_description": "Fios, cabos, disjuntores e componentes para instalações seguras.",
+    "meta_title": "Elétrica em São Paulo | Loja Exemplo",
+    "meta_description": "Fios, cabos, disjuntores, tomadas, interruptores e luminárias para instalações residenciais, comerciais e industriais em São Paulo.",
+    "meta_keywords": "elétrica, fios, cabos, disjuntores, tomadas, luminárias, São Paulo",
+    "description": [
+      {
+        "id": "r__eletrica",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__eletrica",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Elétrica",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Um departamento completo para instalações elétricas residenciais, comerciais e industriais, com materiais de qualidade e ajuda para escolher a especificação correta."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Fios e cabos de todas as bitolas",
+                      "Disjuntores, quadros e tomadas",
+                      "Interruptores e luminárias",
+                      "Emendas, conectores e fitas isolantes"
+                    ]
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Tintas e acabamento",
+    "url_key": "tintas",
+    "status": 1,
+    "image": "images/categoria-tintas.svg",
+    "short_description": "Tintas, massas, vernizes e ferramentas para deixar tudo bonito.",
+    "meta_title": "Tintas e acabamento em São Paulo | Loja Exemplo",
+    "meta_description": "Tintas para parede, madeira e metal, massas, vernizes, pincéis e rolos em São Paulo - SP.",
+    "meta_keywords": "tintas, acrílica, látex, massa corrida, verniz, pincéis, São Paulo",
+    "description": [
+      {
+        "id": "r__tintas",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__tintas",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Tintas e acabamento",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Do preparo da superfície ao acabamento final: tintas para paredes, madeira e metal, além de todos os acessórios para aplicação."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Tintas para parede, madeira e metal",
+                      "Massas corridas, vernizes e seladores",
+                      "Pincéis, rolos e lixas",
+                      "Solventes e aditivos"
+                    ]
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Ferragens",
+    "url_key": "ferragens",
+    "status": 1,
+    "image": "images/categoria-ferragens.svg",
+    "short_description": "Fechaduras, parafusos e ferragens para portas, janelas e móveis.",
+    "meta_title": "Ferragens em São Paulo | Loja Exemplo",
+    "meta_description": "Fechaduras, cadeados, dobradiças, parafusos, pregos, buchas e ferragens em São Paulo - SP.",
+    "meta_keywords": "ferragens, fechaduras, dobradiças, parafusos, buchas, São Paulo",
+    "description": [
+      {
+        "id": "r__ferragens",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__ferragens",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Ferragens",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Peças pequenas que fazem toda a diferença no resultado da obra. Temos ferragens e fixadores para todos os tipos de projeto."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Fechaduras, cadeados e dobradiças",
+                      "Parafusos, pregos, buchas e arruelas",
+                      "Correntes, cabos e ganchos",
+                      "Ferragens para portas, janelas e móveis"
+                    ]
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Ferramentas",
+    "url_key": "ferramentas",
+    "status": 1,
+    "image": "images/categoria-ferramentas.svg",
+    "short_description": "Ferramentas manuais e elétricas para cada etapa do trabalho.",
+    "meta_title": "Ferramentas em São Paulo | Loja Exemplo",
+    "meta_description": "Furadeiras, brocas, chaves, alicates, lixadeiras, serras e medidores em São Paulo - SP.",
+    "meta_keywords": "ferramentas, furadeira, brocas, chaves, lixadeira, São Paulo",
+    "description": [
+      {
+        "id": "r__ferramentas",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__ferramentas",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Ferramentas",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Equipamentos e ferramentas para o profissional e para o faça-você-mesmo, com opções para aluguel, corte, fixação e medição."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Furadeiras e brocas",
+                      "Chaves, alicates e chaves de fenda",
+                      "Lixadeiras, serras e esmeris",
+                      "Medidores, níveis e acessórios"
+                    ]
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Materiais de construção",
+    "url_key": "materiais-de-construcao",
+    "status": 1,
+    "image": "images/categoria-materiais.svg",
+    "short_description": "Cimento, areia, brita, tijolos e o básico de toda obra.",
+    "meta_title": "Materiais de construção em São Paulo | Loja Exemplo",
+    "meta_description": "Cimento, cal, gesso, areia, brita, tijolos, blocos, adesivos e impermeabilizantes em São Paulo - SP.",
+    "meta_keywords": "materiais de construção, cimento, areia, brita, tijolos, São Paulo",
+    "description": [
+      {
+        "id": "r__materiais",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__materiais",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Materiais de construção",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Os insumos essenciais para fundações, alvenaria, reboco e acabamento, disponíveis para retirada na loja ou entrega no local da obra."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Cimento, cal e gesso",
+                      "Areia, brita e pedra",
+                      "Tijolos, blocos e lajotas",
+                      "Adesivos, argamassas e impermeabilizantes"
+                    ]
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Coberturas",
+    "url_key": "coberturas",
+    "status": 1,
+    "image": "images/categoria-coberturas.svg",
+    "short_description": "Telhas, calhas e acessórios para proteger sua construção.",
+    "meta_title": "Coberturas em São Paulo | Loja Exemplo",
+    "meta_description": "Telhas, cumeeiras, calhas, rufos, mantas e isolantes térmicos em São Paulo - SP.",
+    "meta_keywords": "coberturas, telhas, calhas, rufos, impermeabilização, São Paulo",
+    "description": [
+      {
+        "id": "r__coberturas",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__coberturas",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Coberturas",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Soluções para telhados e coberturas, com telhas, calhas, rufos e materiais de vedação para evitar infiltrações."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Telhas e cumeeiras",
+                      "Calhas, rufos e goteiras",
+                      "Mantas e isolantes térmicos",
+                      "Acessórios para telhado"
+                    ]
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Iluminação",
+    "url_key": "iluminacao",
+    "status": 1,
+    "image": "images/categoria-iluminacao.svg",
+    "short_description": "Lâmpadas, luminárias e refletores para todos os ambientes.",
+    "meta_title": "Iluminação em São Paulo | Loja Exemplo",
+    "meta_description": "Lâmpadas LED, luminárias, arandelas, plafons, refletores e fitas LED em São Paulo - SP.",
+    "meta_keywords": "iluminação, lâmpadas LED, luminárias, refletores, fitas LED, São Paulo",
+    "description": [
+      {
+        "id": "r__iluminacao",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__iluminacao",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Iluminação",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Ilumine com economia e bom gosto. Temos lâmpadas LED, luminárias e acessórios para ambientes internos e externos."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Lâmpadas LED de diferentes potências",
+                      "Luminárias, arandelas e plafons",
+                      "Refletores e fitas LED",
+                      "Fontes, drivers e acessórios"
+                    ]
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Orçamento e entrega",
+    "url_key": "orcamento-e-entrega",
+    "status": 1,
+    "image": "images/categoria-orcamento.svg",
+    "short_description": "Peça seu orçamento pelo WhatsApp e combine a retirada ou entrega.",
+    "meta_title": "Orçamento e entrega | Loja Exemplo",
+    "meta_description": "Orçamento rápido pelo WhatsApp, retirada nas lojas 1 e 2 e entrega na região de São Paulo.",
+    "meta_keywords": "orçamento, entrega, retirada, São Paulo, Loja Exemplo",
+    "description": [
+      {
+        "id": "r__orcamento",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__orcamento",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Orçamento e entrega",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Não encontrou um produto ou quer comparar opções? Fale com a nossa equipe: montamos o orçamento e combinamos a melhor forma de entregar ou você retira na loja."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Orçamento rápido pelo WhatsApp",
+                      "Retirada nas lojas 1 e 2",
+                      "Entrega na região de São Paulo",
+                      "Ajuda para escolher o material certo"
+                    ]
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  }
+]

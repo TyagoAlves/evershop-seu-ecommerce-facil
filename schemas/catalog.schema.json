@@ -1,0 +1,128 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lojaexemplo.com.br/schemas/catalog.schema.json",
+  "title": "Catálogo white-label por empresa",
+  "description": "Valida companies/<slug>.catalog.json e o bloco catalog de companies/<slug>.json.",
+  "type": "object",
+  "required": ["skuPrefix"],
+  "additionalProperties": false,
+  "properties": {
+    "skuPrefix": {
+      "type": "string",
+      "pattern": "^[A-Z][A-Z0-9]{1,15}$"
+    },
+    "collections": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/collection" }
+    },
+    "categories": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/category" }
+    },
+    "products": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/product" }
+    },
+    "pages": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/page" }
+    }
+  },
+  "$defs": {
+    "collection": {
+      "type": "object",
+      "required": ["code", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "code": { "type": "string", "minLength": 3 },
+        "name": { "type": "string", "minLength": 1 },
+        "description": { "type": ["string", "null"] }
+      }
+    },
+    "category": {
+      "type": "object",
+      "required": ["key", "url_key", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "key": { "type": "string", "minLength": 3 },
+        "url_key": { "type": "string", "minLength": 3 },
+        "name": { "type": "string", "minLength": 1 },
+        "parent": { "type": ["string", "null"] },
+        "status": { "type": "boolean", "default": true },
+        "include_in_nav": { "type": "boolean", "default": true },
+        "position": { "type": ["integer", "null"] },
+        "show_products": { "type": "boolean", "default": true },
+        "image": { "type": ["string", "null"] },
+        "short_description": { "type": ["string", "null"] },
+        "description": { "type": ["string", "object", "array", "null"] },
+        "meta_title": { "type": ["string", "null"] },
+        "meta_description": { "type": ["string", "null"] },
+        "meta_keywords": { "type": ["string", "null"] }
+      }
+    },
+    "product": {
+      "type": "object",
+      "required": ["sku", "url_key", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "sku": { "type": "string", "minLength": 3 },
+        "url_key": { "type": "string", "minLength": 3 },
+        "name": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "default": "simple" },
+        "category": { "type": ["string", "null"] },
+        "price": { "type": "number", "minimum": 0, "default": 0 },
+        "quoteOnly": { "type": "boolean", "default": true },
+        "visibility": { "type": "boolean", "default": true },
+        "status": { "type": "boolean", "default": true },
+        "qty": { "type": "integer", "minimum": 0, "default": 9999 },
+        "weight": { "type": "number", "minimum": 0, "default": 0 },
+        "manage_stock": { "type": "boolean", "default": false },
+        "stock_availability": { "type": "boolean", "default": true },
+        "no_shipping_required": { "type": "boolean", "default": true },
+        "short_description": { "type": ["string", "null"] },
+        "description": { "type": ["string", "object", "array", "null"] },
+        "meta_title": { "type": ["string", "null"] },
+        "meta_description": { "type": ["string", "null"] },
+        "meta_keywords": { "type": ["string", "null"] },
+        "collections": {
+          "type": "array",
+          "items": { "type": "string" },
+          "default": []
+        },
+        "images": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/image" },
+          "default": []
+        }
+      }
+    },
+    "image": {
+      "oneOf": [
+        { "type": "string", "minLength": 1 },
+        {
+          "type": "object",
+          "required": ["url"],
+          "additionalProperties": false,
+          "properties": {
+            "url": { "type": "string", "minLength": 1 },
+            "isMain": { "type": "boolean", "default": false }
+          }
+        }
+      ]
+    },
+    "page": {
+      "type": "object",
+      "required": ["url_key", "name"],
+      "additionalProperties": false,
+      "properties": {
+        "url_key": { "type": "string", "minLength": 3 },
+        "name": { "type": "string", "minLength": 1 },
+        "status": { "type": "boolean", "default": true },
+        "content": { "type": ["string", "object", "array", "null"] },
+        "meta_title": { "type": ["string", "null"] },
+        "meta_description": { "type": ["string", "null"] },
+        "meta_keywords": { "type": ["string", "null"] }
+      }
+    }
+  }
+}

@@ -1,0 +1,321 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lojaexemplo.com.br/schemas/company-manifest.json",
+  "title": "Manifesto de empresa (Fase 0)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema",
+    "slug",
+    "default",
+    "domain",
+    "theme",
+    "extension",
+    "name",
+    "shortName",
+    "tagline",
+    "description",
+    "city",
+    "uf",
+    "region",
+    "phone",
+    "whatsapp",
+    "address",
+    "hours",
+    "mapsUrl",
+    "placeId",
+    "facebook",
+    "publicEmail",
+    "rating",
+    "nav",
+    "cmsSlugs",
+    "departments",
+    "departmentsIntro",
+    "featured",
+    "differentialsIntro",
+    "differentials",
+    "hero",
+    "cta",
+    "location",
+    "brand",
+    "priceMode",
+    "seo",
+    "catalog"
+  ],
+  "properties": {
+    "schema": { "type": "integer", "const": 1 },
+    "slug": {
+      "type": "string",
+      "pattern": "^(_template|[a-z0-9]+(?:-[a-z0-9]+)*)$"
+    },
+    "default": { "type": "boolean" },
+    "domain": { "type": ["string", "null"] },
+    "theme": { "type": ["string", "null"] },
+    "extension": { "type": ["string", "null"] },
+    "name": { "type": ["string", "null"] },
+    "shortName": { "type": ["string", "null"] },
+    "tagline": { "type": ["string", "null"] },
+    "description": { "type": ["string", "null"] },
+    "city": { "type": ["string", "null"] },
+    "uf": { "type": ["string", "null"] },
+    "region": { "type": ["string", "null"] },
+    "phone": { "$ref": "#/$defs/phone" },
+    "whatsapp": { "$ref": "#/$defs/whatsapp" },
+    "address": { "$ref": "#/$defs/address" },
+    "hours": { "type": ["string", "null"] },
+    "mapsUrl": { "type": ["string", "null"] },
+    "placeId": { "type": ["string", "null"] },
+    "facebook": { "type": ["string", "null"] },
+    "publicEmail": { "type": ["string", "null"] },
+    "rating": { "$ref": "#/$defs/rating" },
+    "nav": { "type": "array", "items": { "$ref": "#/$defs/navItem" } },
+    "cmsSlugs": { "type": "array", "items": { "type": "string" } },
+    "departments": { "type": "array", "items": { "type": "string" } },
+    "departmentsIntro": { "$ref": "#/$defs/departmentsIntro" },
+    "featured": { "$ref": "#/$defs/featured" },
+    "differentialsIntro": { "$ref": "#/$defs/differentialsIntro" },
+    "differentials": { "type": "array", "items": { "$ref": "#/$defs/differentialItem" } },
+    "hero": { "$ref": "#/$defs/hero" },
+    "cta": { "$ref": "#/$defs/cta" },
+    "location": { "$ref": "#/$defs/location" },
+    "brand": { "$ref": "#/$defs/brand" },
+    "priceMode": { "type": ["string", "null"], "enum": ["quote", "sale", null] },
+    "seo": { "$ref": "#/$defs/seo" },
+    "catalog": { "$ref": "#/$defs/catalog" }
+  },
+  "$defs": {
+    "phone": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["display", "e164"],
+      "properties": {
+        "display": { "type": ["string", "null"] },
+        "e164": { "type": ["string", "null"] }
+      }
+    },
+    "whatsapp": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["display", "number", "defaultMessage", "infoMessage", "quoteMessageTemplate"],
+      "properties": {
+        "display": { "type": ["string", "null"] },
+        "number": { "type": ["string", "null"] },
+        "defaultMessage": { "type": ["string", "null"] },
+        "infoMessage": { "type": ["string", "null"] },
+        "quoteMessageTemplate": { "type": ["string", "null"] }
+      }
+    },
+    "address": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["full", "short", "streetAddress", "locality", "region", "postalCode", "country"],
+      "properties": {
+        "full": { "type": ["string", "null"] },
+        "short": { "type": ["string", "null"] },
+        "streetAddress": { "type": ["string", "null"] },
+        "locality": { "type": ["string", "null"] },
+        "region": { "type": ["string", "null"] },
+        "postalCode": { "type": ["string", "null"] },
+        "country": { "type": ["string", "null"] }
+      }
+    },
+    "rating": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["value", "reviews", "sourceUrl"],
+      "properties": {
+        "value": { "type": ["string", "null"] },
+        "reviews": { "type": ["integer", "null"] },
+        "sourceUrl": { "type": ["string", "null"] }
+      }
+    },
+    "navItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "label", "href", "showInDesktop"],
+      "properties": {
+        "id": { "type": "string" },
+        "label": { "type": "string" },
+        "href": { "type": "string" },
+        "showInDesktop": { "type": "boolean" }
+      }
+    },
+    "departmentsIntro": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["eyebrow", "title", "description", "linkLabel", "linkHref", "limit"],
+      "properties": {
+        "eyebrow": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "linkLabel": { "type": ["string", "null"] },
+        "linkHref": { "type": ["string", "null"] },
+        "limit": { "type": ["integer", "null"] }
+      }
+    },
+    "featured": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["eyebrow", "title", "description", "linkLabel", "linkHref", "limit"],
+      "properties": {
+        "eyebrow": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] },
+        "linkLabel": { "type": ["string", "null"] },
+        "linkHref": { "type": ["string", "null"] },
+        "limit": { "type": ["integer", "null"] }
+      }
+    },
+    "differentialsIntro": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["eyebrow", "title"],
+      "properties": {
+        "eyebrow": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] }
+      }
+    },
+    "differentialItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "icon", "title", "text"],
+      "properties": {
+        "id": { "type": "string" },
+        "icon": { "type": "string" },
+        "title": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    },
+    "statItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "value", "label"],
+      "properties": {
+        "id": { "type": "string" },
+        "value": { "type": "string" },
+        "label": { "type": "string" }
+      }
+    },
+    "metaItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["id", "icon", "text"],
+      "properties": {
+        "id": { "type": "string" },
+        "icon": { "type": "string" },
+        "text": { "type": "string" }
+      }
+    },
+    "hero": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": [
+        "eyebrow",
+        "titlePrefix",
+        "titleHighlight",
+        "titleSuffix",
+        "text",
+        "primaryLabel",
+        "secondaryLabel",
+        "secondaryHref",
+        "stats"
+      ],
+      "properties": {
+        "eyebrow": { "type": ["string", "null"] },
+        "titlePrefix": { "type": ["string", "null"] },
+        "titleHighlight": { "type": ["string", "null"] },
+        "titleSuffix": { "type": ["string", "null"] },
+        "text": { "type": ["string", "null"] },
+        "primaryLabel": { "type": ["string", "null"] },
+        "secondaryLabel": { "type": ["string", "null"] },
+        "secondaryHref": { "type": ["string", "null"] },
+        "stats": { "type": "array", "items": { "$ref": "#/$defs/statItem" } }
+      }
+    },
+    "cta": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["eyebrow", "title", "text", "label"],
+      "properties": {
+        "eyebrow": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] },
+        "text": { "type": ["string", "null"] },
+        "label": { "type": ["string", "null"] }
+      }
+    },
+    "location": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": [
+        "eyebrow",
+        "title",
+        "text",
+        "address",
+        "meta",
+        "mapsLabel",
+        "mapsHref",
+        "whatsappLabel",
+        "cardTitle",
+        "cardLine1",
+        "cardLine2"
+      ],
+      "properties": {
+        "eyebrow": { "type": ["string", "null"] },
+        "title": { "type": ["string", "null"] },
+        "text": { "type": ["string", "null"] },
+        "address": { "type": ["string", "null"] },
+        "meta": { "type": "array", "items": { "$ref": "#/$defs/metaItem" } },
+        "mapsLabel": { "type": ["string", "null"] },
+        "mapsHref": { "type": ["string", "null"] },
+        "whatsappLabel": { "type": ["string", "null"] },
+        "cardTitle": { "type": ["string", "null"] },
+        "cardLine1": { "type": ["string", "null"] },
+        "cardLine2": { "type": ["string", "null"] }
+      }
+    },
+    "brand": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["primary", "hover", "dark", "soft", "shortName"],
+      "properties": {
+        "primary": { "type": ["string", "null"] },
+        "hover": { "type": ["string", "null"] },
+        "dark": { "type": ["string", "null"] },
+        "soft": { "type": ["string", "null"] },
+        "shortName": { "type": ["string", "null"] }
+      }
+    },
+    "seo": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["description", "titleTemplates", "robotsTxt"],
+      "properties": {
+        "description": { "type": ["string", "null"] },
+        "titleTemplates": { "$ref": "#/$defs/titleTemplates" },
+        "robotsTxt": { "type": ["string", "null"] }
+      }
+    },
+    "titleTemplates": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["category", "product", "cms"],
+      "properties": {
+        "category": { "type": ["string", "null"] },
+        "product": { "type": ["string", "null"] },
+        "cms": { "type": ["string", "null"] }
+      }
+    },
+    "catalog": {
+      "type": ["object", "null"],
+      "additionalProperties": false,
+      "required": ["skuPrefix", "collections", "categories", "products", "pages"],
+      "properties": {
+        "skuPrefix": { "type": ["string", "null"] },
+        "collections": { "type": "array", "items": { "type": "string" } },
+        "categories": { "type": "array", "items": { "type": "string" } },
+        "products": { "type": "array", "items": { "type": "string" } },
+        "pages": { "type": "array", "items": { "type": "string" } }
+      }
+    }
+  }
+}

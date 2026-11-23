@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 260 56" role="img" aria-label="Loja Exemplo">
+  <rect x="0" y="4" width="48" height="48" rx="14" fill="#116dff"/>
+  <path d="M24 14S13 27.5 13 35a11 11 0 0 0 22 0c0-7.5-11-21-11-21z" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18.5 35.5a5.5 5.5 0 0 0 5.5 5.5" fill="none" stroke="#fff" stroke-width="2.6" stroke-linecap="round"/>
+  <text x="62" y="27" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="800" letter-spacing="-0.4" fill="#0f172a">LOJA EXEMPLO</text>
+  <text x="74" y="45" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="800" letter-spacing="4.2" fill="#116dff">EXEMPLO</text>
+</svg>

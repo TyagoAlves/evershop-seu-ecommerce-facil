@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "slug": "loja-exemplo",
+  "enabled": false,
+  "currency": "BRL",
+  "marketplaces": {
+    "mercadolivre": {
+      "enabled": false,
+      "siteId": "MLB",
+      "currencyId": "BRL",
+      "conditionDefault": "new",
+      "buyingMode": "buy_it_now",
+      "listingTypeDefault": "free",
+      "webhookPath": "/api/marketplaces/mercadolivre/webhook",
+      "categoryMap": [],
+      "attributeMap": [],
+      "publishAllowed": false,
+      "publishSkus": []
+    },
+    "shopee": {
+      "enabled": false,
+      "region": "BR",
+      "environment": "production",
+      "itemStatusDefault": "UNLIST",
+      "webhookPath": "/api/marketplaces/shopee/webhook",
+      "categoryMap": [],
+      "publishAllowed": false,
+      "publishSkus": []
+    }
+  },
+  "sync": {
+    "listingsCron": "*/15 * * * *",
+    "ordersCron": "*/5 * * * *",
+    "inventoryCron": "*/10 * * * *",
+    "reconcileCron": "17 3 * * *",
+    "batchSize": 20
+  },
+  "inventory": {
+    "reserveOnOrder": true,
+    "deductOnShip": true,
+    "restoreOnCancel": true
+  }
+}

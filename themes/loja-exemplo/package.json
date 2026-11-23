@@ -1,0 +1,11 @@
+{
+  "name": "loja-exemplo-theme",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Tema Loja Exemplo para EverShop",
+  "license": "GPL-3.0",
+  "scripts": {
+    "tsc": "tsc"
+  }
+}

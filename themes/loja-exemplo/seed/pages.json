@@ -1,0 +1,219 @@
+[
+  {
+    "status": true,
+    "url_key": "empresa",
+    "name": "Empresa",
+    "meta_title": "Sobre a Loja Exemplo | Materiais de construção em São Paulo",
+    "meta_description": "Conheça a Loja Exemplo: materiais de construção em São Paulo - SP, com hidráulica, elétrica, tintas, ferragens e os menores preços.",
+    "meta_keywords": "Loja Exemplo, empresa, São Paulo, materiais de construção",
+    "content": [
+      {
+        "id": "r__empresa",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__empresa",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Sobre a Loja Exemplo",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "A Loja Exemplo é uma loja de materiais de construção localizada na Rua Exemplo, 100, Centro, São Paulo - SP. Atuamos com hidráulica, elétrica, tintas, ferragens, ferramentas e todo o básico de obra nas lojas 1 e 2, no mesmo endereço."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Preço justo e atendimento próximo",
+                    "level": 3
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Trabalhamos com preços competitivos em todos os produtos para que você compre mais com o seu orçamento, sem abrir mão da qualidade. Nossa equipe conhece os produtos e ajuda você a escolher o material certo para a sua obra, reforma ou manutenção — presencialmente ou pelo WhatsApp."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Os menores preços da região",
+                      "Atendimento que ajuda de verdade",
+                      "Tudo no mesmo lugar: hidráulica, elétrica, tintas, ferragens, ferramentas e materiais de construção"
+                    ]
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Onde estamos",
+                    "level": 3
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Rua Exemplo, 100, Centro, São Paulo - SP, CEP 01000-000. Funcionamos de segunda a sábado, das 8h às 18h, e aos domingos, das 9h às 12h."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "status": true,
+    "url_key": "contato",
+    "name": "Contato",
+    "meta_title": "Contato | Loja Exemplo",
+    "meta_description": "Fale com a Loja Exemplo pelo WhatsApp (11) 90000-0000 ou telefone (11) 4000-0000. Endereço e horários em São Paulo - SP.",
+    "meta_keywords": "contato, WhatsApp, telefone, endereço, São Paulo, Loja Exemplo",
+    "content": [
+      {
+        "id": "r__contato",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__contato",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Fale com a gente",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Precisa de um orçamento, de ajuda para escolher um material ou quer saber se temos um produto em estoque? Fale com a nossa equipe — atendemos pelo WhatsApp e presencialmente nas lojas 1 e 2."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "WhatsApp: (11) 90000-0000",
+                      "Telefone: (11) 4000-0000",
+                      "Endereço: Rua Exemplo, 100, Centro, São Paulo - SP, CEP 01000-000",
+                      "Horário: Seg a Sáb, 8h às 18h · Dom, 9h às 12h"
+                    ]
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Também estamos no Facebook: facebook.com/lojaexemplo"
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Avaliação 4,5 no Google, com 13 avaliações. Venha nos visitar ou envie sua lista de materiais pelo WhatsApp."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "status": true,
+    "url_key": "departamentos",
+    "name": "Departamentos",
+    "meta_title": "Departamentos | Loja Exemplo",
+    "meta_description": "Conheça os departamentos da Loja Exemplo: hidráulica, elétrica, tintas, ferragens, ferramentas, materiais de construção, coberturas e iluminação.",
+    "meta_keywords": "departamentos, hidráulica, elétrica, tintas, ferragens, ferramentas, São Paulo",
+    "content": [
+      {
+        "id": "r__departamentos_page",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__departamentos_page",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "header",
+                  "data": {
+                    "text": "Nossos departamentos",
+                    "level": 2
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Tudo o que você precisa para construir, reformar e manter, reunido em duas lojas no mesmo endereço em São Paulo."
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "list",
+                  "data": {
+                    "style": "unordered",
+                    "items": [
+                      "Hidráulica — tubos, conexões, torneiras, bombas e filtros",
+                      "Elétrica — fios, cabos, disjuntores, tomadas e luminárias",
+                      "Tintas e acabamento — tintas, massas, vernizes, pincéis e rolos",
+                      "Ferragens — fechaduras, dobradiças, parafusos e buchas",
+                      "Ferramentas — furadeiras, chaves, lixadeiras e medidores",
+                      "Materiais de construção — cimento, areia, brita, tijolos e blocos",
+                      "Coberturas — telhas, calhas, rufos e mantas",
+                      "Iluminação — lâmpadas LED, luminárias e refletores",
+                      "Orçamento e entrega — monte sua lista e combine a entrega"
+                    ]
+                  },
+                  "size": 1
+                },
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Não encontrou algum item? Envie sua lista pelo WhatsApp e buscamos a melhor opção para o seu projeto."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  }
+]

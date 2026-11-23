@@ -1,0 +1,5 @@
+{
+  "methods": ["GET"],
+  "path": "/marketplaces/status",
+  "name": "Status das integrações com marketplaces"
+}

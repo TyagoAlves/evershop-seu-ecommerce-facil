@@ -1,0 +1,61 @@
+# Dados pessoais e LGPD — Loja Exemplo (white-label Fase 0)
+
+## 0. Escopo, fontes e limites
+
+- Fontes consultadas: `docs/AGENT_CONTRACT.md`, `docs/MAPEAMENTO_DADOS.md`, `README.md` e o manifesto de referência `companies/loja-exemplo.json`. Nenhum comando foi executado e nenhum arquivo foi alterado além deste documento.
+- Este é um **guia técnico de inventário e boas práticas**, não parecer jurídico. As bases legais sugeridas (Lei nº 13.709/2018 — LGPD, art. 7º) devem ser confirmadas pelo jurídico/DPO da empresa antes de qualquer coleta ou publicação.
+- Regra de ouro do contrato (§7): **dado que não existe fica `null` ou a seção é omitida**. Nunca preencher um campo "para completar o layout".
+- A saída renderizada da Loja Exemplo deve permanecer idêntica (contrato §6). Este documento não propõe mudança visual ou de texto.
+
+## 1. Inventário de dados usados pelo site
+
+| # | Dado | Onde aparece / origem | Natureza | Base legal indicada (LGPD, art. 7º) | Finalidade e boas práticas |
+|---|---|---|---|---|---|
+| 1 | Telefone fixo `(00) 0000-0000` (`tel:+5500000000000`) | `site.ts`, widgets, `Header`, `Footer`, páginas CMS de contato/empresa, README | Contato institucional da empresa; pode ser dado pessoal se a linha estiver vinculada a pessoa física | Legítimo interesse (V) para divulgar canal de atendimento; no atendimento ao titular, execução de contrato (VI) ou consentimento (I) conforme o caso | Usar somente o número da empresa ativa. Não solicitar dados adicionais do visitante para exibir o telefone. Não registrar números de visitantes em logs públicos. |
+| 2 | WhatsApp `(00) 00000-0000` / `5500000000000`, com mensagem padrão de orçamento | Links `wa.me`, `quoteHref()` / `waLink()`, hero, CTA, ficha de produto, carrinho, rodapé, página de login, páginas CMS | Contato comercial da empresa. Se a linha for de titularidade de pessoa física, também é dado pessoal do titular | Legítimo interesse (V) para atendimento comercial; consentimento (I) pelo envio voluntário da mensagem; execução de contrato (VI) quando aplicável ao orçamento/pedido | Mensagem padrão não deve conter dados de terceiros. Não publicar WhatsApp pessoal de funcionário como canal da empresa. Parâmetros de campanha (`utm_source`) não devem carregar nome, CPF ou endereço do cliente. |
+| 3 | NAP: nome fantasia "Loja Exemplo", endereço `Rua Exemplo, 100, Centro, São Paulo – SP, CEP 00000-000`, horários (`Seg a Sáb, 8h às 18h · Dom, 9h às 12h`), `mapsUrl` por consulta de busca e Facebook institucional | Manifesto, widgets de localização, `Header`, `Footer`, `StructuredData`, sitemap, páginas CMS | Dados institucionais de localização/contato; não são dados pessoais enquanto a empresa for pessoa jurídica, mas podem ser se o negócio for empresário individual | Legítimo interesse (V) em informar onde a empresa atende; cumprimento de deveres de informação ao consumidor, quando aplicável | Manter NAP consistente entre manifesto, artefatos gerados e páginas. Não inventar CNPJ, razão social, coordenadas ou Place ID — ver `docs/MAPEAMENTO_DADOS.md` §9. Não replicar este NAP em outra empresa. |
+| 4 | Avaliações: agregado `4,5` e `13 avaliações`, atribuído a avaliações no Google | Widgets, `Footer`, páginas CMS. `rating.sourceUrl` é `null` | Dado **agregado**, sem identificação de titular. Autores, textos e fotos das avaliações são dados pessoais de terceiros e **não** estão armazenados neste repositório | Para o agregado: legítimo interesse (V) em informar reputação. Se passar a exibir autor, texto, foto ou link individual, será necessária base legal própria (consentimento — I — ou legítimo interesse avaliado — V) e atribuição correta | Não raspar avaliações, não copiar textos/autores de terceiros, não alterar a nota. Manter `sourceUrl: null` enquanto não houver fonte verificada. Não transportar a nota da Exemplo para outra empresa. |
+| 5 | Dados enviados pelo visitante pelo WhatsApp: nome, telefone do cliente, lista de materiais e, se informado, endereço de entrega | Fluxo sai do site para o aplicativo de WhatsApp; não há persistência desses dados no código do tema | Dados pessoais do titular, fornecidos voluntariamente | Consentimento (I) no envio da mensagem; execução de contrato (VI) ou legítimo interesse (V) para responder ao orçamento | Avisar no ponto de coleta a finalidade e a retenção. Pedir o mínimo: telefone e lista de materiais; não exigir CPF/CNPJ para orçamento. Não usar para marketing sem consentimento específico. Não salvar em planilhas ou arquivos públicos. Excluir quando o titular pedir e ao fim da retenção necessária. |
+| 6 | Conta administrativa: `ADMIN_FULLNAME` e `ADMIN_EMAIL` (valor funcional de administração), além de credenciais de acesso ao painel | `.env.example` e fallback em `scripts/install-headless.mjs`; não devem aparecer no frontStore | Dados de conta administrativa/credenciais — classificação **restrita**. Não é canal de contato com o público | Legítimo interesse (V) da empresa em controlar acesso e garantir segurança da operação; obrigação legal (II) quando aplicável a registros de acesso | Manter fora do manifesto (`publicEmail` permanece `null`), de `company.ts`, `widgets.json`, `config/generated/company.json`, sitemap, `StructuredData`, páginas CMS, logs e commits. Guardar em `.env` não versionado, com acesso restrito e rodízio/MFA quando suportado. **Nunca** usar `admin@...` como e-mail de contato nem como canal de exercício de direitos do titular. |
+| 7 | Dados de conta/pedido do core Evershop (cadastro, endereços, pedidos) e eventual telemetria/cookies | Não verificados nesta auditoria. O modo `priceMode: "quote"` e a ausência de checkout no tema não provam que não existam em runtime | Se existirem: dados pessoais de clientes e dados técnicos de navegação | Pedido: execução de contrato (VI) e obrigação legal (II) para registros fiscais. Segurança/anti-fraude: legítimo interesse (V). Telemetria: avaliar consentimento e aviso específico | **Não afirmar que não existem.** Inventariar separadamente antes do deploy e definir retenção, política de privacidade e direitos do titular. Não instalar analytics por iniciativa própria nesta fase. |
+
+## 2. Regras de não invenção e isolamento entre empresas
+
+1. **Não inventar e-mail público.** `publicEmail` permanece `null` no manifesto da Exemplo e em qualquer empresa que não tenha um e-mail público real confirmado. Não criar `contato@`, `orcamento@`, `privacidade@` ou qualquer outro endereço "chutado". Se a empresa fornecer um e-mail público **real**, a alteração deve passar pelo dono do manifesto e pelos geradores — nunca por edição manual no tema.
+2. **Não expor o e-mail administrativo como contato.** O valor de `ADMIN_EMAIL` é credencial/identidade de gestão do painel. Não pode aparecer em rodapé, páginas de contato, SEO, dados estruturados, sitemap, mensagens de WhatsApp, README público nem como "e-mail para LGPD". Para direitos do titular, usar canal privado já existente e autorizado pela empresa; se não houver canal público real, **omitir** e registrar a pendência — não substituir por `admin@`.
+3. **Não replicar dados da Exemplo em outras empresas.** Cada `companies/<slug>.json` deve conter telefone, WhatsApp, NAP, horários, Facebook, avaliações e mensagem padrão **próprios e reais** daquela empresa. A renderização deve usar `COMPANY_SLUG`; nenhum fallback da Exemplo pode sobreviver no tenant novo. Se um dado não existir no manifesto da outra empresa, fica `null`/omitido — nunca se copia o valor da Exemplo "para preencher". Isso inclui nome fantasia, CEP, nota/contagem de avaliações e link do Facebook.
+4. **Não inventar CNPJ, razão social, coordenadas ou Place ID.** Conforme `docs/MAPEAMENTO_DADOS.md` §9, não há ocorrências no repositório: manter `placeId: null`, `rating.sourceUrl: null` e não criar campos de CNPJ/latitude/longitude. Se no futuro houver fonte oficial confirmada, documentar a origem antes de incluir.
+5. **Não tratar linha pessoal como corporativa sem autorização.** Se o número de WhatsApp pertencer a uma pessoa física, a empresa deve regularizar a titularidade ou obter concordância expressa antes de divulgá-lo como canal oficial (decisão fora desta fase).
+6. **Não copiar avaliações de outras lojas.** Agregado e eventuais textos só podem vir da empresa em questão; sem fonte verificada, omitir a afirmação em vez de estimar.
+
+## 3. Checklist de remoção e auditoria antes de publicar
+
+- [ ] `publicEmail` continua `null` no manifesto ativo e em `config/generated/company.json`, `company.ts` e widgets; nenhum e-mail público inventado.
+- [ ] Busca textual por `admin@`, pelo valor de `ADMIN_EMAIL` e por `ADMIN_FULLNAME` no frontStore, em `generated/`, `config/generated`, sitemap, `StructuredData`, páginas CMS, widgets e README público: **zero** ocorrências fora de `.env.example`, scripts internos de instalação e documentação de controle de acesso. Nenhum `.env` real, token ou senha versionado.
+- [ ] Telefone e WhatsApp exibidos conferem com o manifesto da **empresa ativa**. Em outro tenant, buscar por fragmentos do telefone/WhatsApp da empresa-base (ex.: DDD, blocos numéricos, formato com e sem máscara): nenhum resíduo da empresa-base.
+- [ ] NAP conferido com a empresa ativa: nome, endereço, `00000-000`, horários, `mapsUrl` e Facebook. Em outro tenant, executar também a auditoria de vazamento de dados da empresa (dependência: `scripts/check-company-leaks.mjs`, dono da auditoria).
+- [ ] Avaliações: apenas agregado, sem autores/textos/fotos; nota e contagem pertencem à empresa ativa; `rating.sourceUrl: null` se não houver URL de origem confirmada.
+- [ ] Nenhum CNPJ, razão social, `latitude`, `longitude`, `ChIJ`, `place_id` ou `placeId` preenchido sem fonte oficial. Buscar esses termos antes do deploy.
+- [ ] Links `wa.me` usam `whatsapp.number` da empresa ativa; mensagem padrão sem dados de terceiros; parâmetros UTM sem CPF, nome ou endereço.
+- [ ] Aviso no ponto de coleta do WhatsApp revisado (finalidade, dados mínimos, prazo de retenção e direitos do titular). Nenhum e-mail administrativo usado como canal de privacidade; pendência registrada se não houver canal público real.
+- [ ] Contas, pedidos e analytics presentes em runtime inventariados em documento separado, com base legal, retenção e política de privacidade definidas. Não presumir ausência.
+- [ ] Saída renderizada da Loja Exemplo permanece idêntica à atual (contrato §6).
+- [ ] Nenhum `git commit`, `git push` ou publicação realizado como parte desta entrega; revisão final cabe ao time/donos dos arquivos.
+
+## 4. Dependências (somente descritas; não editadas por este agente)
+
+- `docs/MAPEAMENTO_DADOS.md` — inventário e lista de ausências (dono: mapeamento).
+- `companies/*.json`, `.env.example`, `scripts/render-company-config.mjs` — inclusão de qualquer dado real (dono: config/manifesto).
+- `themes/loja-exemplo/src/components/frontStore/site.ts`, `quoteHref`/`waLink` — canais de WhatsApp (dono: WhatsApp).
+- `scripts/check-company-leaks.mjs` — auditoria automatizada de resíduos entre empresas (dono: auditoria de vazamento).
+- `scripts/render-company-sitemap.mjs`, `StructuredData.tsx`, `Base.tsx` — exposição de NAP/avalições em SEO (dono: SEO/domínio).
+- Jurídico/DPO da empresa — validação das bases legais, retenção e canal de titularidade.
+
+## 5. Riscos conhecidos
+
+- **Alto:** o e-mail administrativo ser convertido em "e-mail de contato" para completar o manifesto ou atender pedido de LGPD. Mitigação: `publicEmail: null` e busca por `admin@` no checklist.
+- **Alto:** herança de telefone/WhatsApp/NAP/avaliações da Exemplo em outro tenant white-label. Mitigação: renderização por `COMPANY_SLUG` e auditoria de vazamento.
+- **Médio:** titularidade pessoal do número de WhatsApp divulgado como corporativo. Mitigação: registrar e regularizar com a empresa.
+- **Médio:** agregado de avaliações sem fonte verificada (`sourceUrl: null`) ou cópia indevida de avaliações de terceiros. Mitigação: manter apenas o agregado conhecido e não raspar conteúdo.
+- **Médio:** inventário incompleto quanto a conta/pedido/telemetria do core, que não foi auditado aqui. Mitigação: inventário complementar antes do deploy.
+- **Jurídico:** as bases legais acima são sugestões técnicas e dependem da finalidade real e da decisão do controlador; não substituem orientação do jurídico/DPO.

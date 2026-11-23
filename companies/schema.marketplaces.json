@@ -1,0 +1,203 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lojaexemplo.com.br/schemas/marketplaces-config.json",
+  "title": "Configuração não secreta de marketplaces (Fase 3)",
+  "description": "Configuração por empresa para Mercado Livre (MLB) e Shopee BR. Nunca conter credenciais, preços inventados nem anúncios autorizados.",
+  "type": "object",
+  "additionalProperties": false,
+  "allOf": [
+    { "$ref": "#/$defs/semChavesDeSegredo" }
+  ],
+  "required": [
+    "schema",
+    "slug",
+    "enabled",
+    "currency",
+    "marketplaces",
+    "sync",
+    "inventory"
+  ],
+  "properties": {
+    "schema": { "type": "integer", "const": 1, "default": 1 },
+    "slug": {
+      "type": "string",
+      "pattern": "^(_template|[a-z0-9]+(?:-[a-z0-9]+)*)$"
+    },
+    "enabled": { "type": "boolean", "default": false },
+    "currency": { "type": "string", "const": "BRL", "default": "BRL" },
+    "marketplaces": { "$ref": "#/$defs/marketplaces" },
+    "sync": { "$ref": "#/$defs/sync" },
+    "inventory": { "$ref": "#/$defs/inventory" }
+  },
+  "$defs": {
+    "semChavesDeSegredo": {
+      "description": "Rejeita qualquer nome de chave que pareça segredo, em qualquer nível do arquivo.",
+      "propertyNames": {
+        "not": {
+          "pattern": "(?:[sS][eE][cC][rR][eE][tT]|[tT][oO][kK][eE][nN]|[pP][aA][sS][sS][wW][oO][rR][dD]|(?:[aA][pP][iI]|[pP][aA][rR][tT][nN][eE][rR])[_-]?[kK][eE][yY])"
+        }
+      }
+    },
+    "marketplaces": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        { "$ref": "#/$defs/semChavesDeSegredo" }
+      ],
+      "required": ["mercadolivre", "shopee"],
+      "properties": {
+        "mercadolivre": { "$ref": "#/$defs/mercadolivre" },
+        "shopee": { "$ref": "#/$defs/shopee" }
+      }
+    },
+    "mercadolivre": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        { "$ref": "#/$defs/semChavesDeSegredo" }
+      ],
+      "required": [
+        "enabled",
+        "siteId",
+        "currencyId",
+        "conditionDefault",
+        "buyingMode",
+        "listingTypeDefault",
+        "webhookPath",
+        "categoryMap",
+        "attributeMap",
+        "publishAllowed",
+        "publishSkus"
+      ],
+      "properties": {
+        "enabled": { "type": "boolean", "default": false },
+        "siteId": { "type": "string", "const": "MLB", "default": "MLB" },
+        "currencyId": { "type": "string", "const": "BRL", "default": "BRL" },
+        "conditionDefault": { "type": "string", "const": "new", "default": "new" },
+        "buyingMode": { "type": "string", "const": "buy_it_now", "default": "buy_it_now" },
+        "listingTypeDefault": { "type": "string", "const": "free", "default": "free" },
+        "webhookPath": {
+          "type": "string",
+          "const": "/api/marketplaces/mercadolivre/webhook",
+          "default": "/api/marketplaces/mercadolivre/webhook"
+        },
+        "categoryMap": { "type": "array", "items": { "$ref": "#/$defs/categoriaMapItem" }, "default": [] },
+        "attributeMap": { "type": "array", "items": { "$ref": "#/$defs/atributoMapItem" }, "default": [] },
+        "publishAllowed": { "type": "boolean", "default": false },
+        "publishSkus": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] }
+      }
+    },
+    "shopee": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        { "$ref": "#/$defs/semChavesDeSegredo" }
+      ],
+      "required": [
+        "enabled",
+        "region",
+        "environment",
+        "itemStatusDefault",
+        "webhookPath",
+        "categoryMap",
+        "publishAllowed",
+        "publishSkus"
+      ],
+      "properties": {
+        "enabled": { "type": "boolean", "default": false },
+        "region": { "type": "string", "const": "BR", "default": "BR" },
+        "environment": { "type": "string", "enum": ["production", "sandbox"], "default": "production" },
+        "itemStatusDefault": { "type": "string", "const": "UNLIST", "default": "UNLIST" },
+        "webhookPath": {
+          "type": "string",
+          "const": "/api/marketplaces/shopee/webhook",
+          "default": "/api/marketplaces/shopee/webhook"
+        },
+        "categoryMap": { "type": "array", "items": { "$ref": "#/$defs/categoriaMapItem" }, "default": [] },
+        "publishAllowed": { "type": "boolean", "default": false },
+        "publishSkus": { "type": "array", "items": { "type": "string", "minLength": 1 }, "default": [] }
+      }
+    },
+    "categoriaMapItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        { "$ref": "#/$defs/semChavesDeSegredo" }
+      ],
+      "required": ["skuPrefix", "categoryId", "listingTypeId"],
+      "properties": {
+        "skuPrefix": { "type": "string", "pattern": "^[A-Za-z0-9-]{1,40}$" },
+        "categoryId": { "type": ["string", "null"], "default": null },
+        "listingTypeId": { "type": ["string", "null"], "default": null }
+      }
+    },
+    "atributoMapItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        { "$ref": "#/$defs/semChavesDeSegredo" }
+      ],
+      "required": ["sku", "attributes"],
+      "properties": {
+        "sku": { "type": "string", "minLength": 1 },
+        "attributes": { "type": "array", "items": { "$ref": "#/$defs/atributoItem" }, "default": [] }
+      }
+    },
+    "atributoItem": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        { "$ref": "#/$defs/semChavesDeSegredo" }
+      ],
+      "required": ["id", "value_name"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "value_name": { "type": "string", "minLength": 1 }
+      }
+    },
+    "sync": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        { "$ref": "#/$defs/semChavesDeSegredo" }
+      ],
+      "required": ["listingsCron", "ordersCron", "inventoryCron", "reconcileCron", "batchSize"],
+      "properties": {
+        "listingsCron": {
+          "type": "string",
+          "pattern": "^[^\\s]+(?:\\s+[^\\s]+){4}$",
+          "default": "*/15 * * * *"
+        },
+        "ordersCron": {
+          "type": "string",
+          "pattern": "^[^\\s]+(?:\\s+[^\\s]+){4}$",
+          "default": "*/5 * * * *"
+        },
+        "inventoryCron": {
+          "type": "string",
+          "pattern": "^[^\\s]+(?:\\s+[^\\s]+){4}$",
+          "default": "*/10 * * * *"
+        },
+        "reconcileCron": {
+          "type": "string",
+          "pattern": "^[^\\s]+(?:\\s+[^\\s]+){4}$",
+          "default": "17 3 * * *"
+        },
+        "batchSize": { "type": "integer", "minimum": 1, "default": 20 }
+      }
+    },
+    "inventory": {
+      "type": "object",
+      "additionalProperties": false,
+      "allOf": [
+        { "$ref": "#/$defs/semChavesDeSegredo" }
+      ],
+      "required": ["reserveOnOrder", "deductOnShip", "restoreOnCancel"],
+      "properties": {
+        "reserveOnOrder": { "type": "boolean", "default": true },
+        "deductOnShip": { "type": "boolean", "default": true },
+        "restoreOnCancel": { "type": "boolean", "default": true }
+      }
+    }
+  }
+}

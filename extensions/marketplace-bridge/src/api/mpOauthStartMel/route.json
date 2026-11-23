@@ -1,0 +1,6 @@
+{
+  "methods": ["GET"],
+  "path": "/marketplaces/mercadolivre/oauth/start",
+  "name": "Iniciar autorização do Mercado Livre",
+  "access": "private"
+}

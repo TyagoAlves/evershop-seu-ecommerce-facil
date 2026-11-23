@@ -1,0 +1,6 @@
+{
+  "methods": ["GET"],
+  "path": "/marketplaces/shopee/oauth/start",
+  "name": "Iniciar autorização da Shopee",
+  "access": "private"
+}

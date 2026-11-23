@@ -1,0 +1,6 @@
+{
+  "methods": ["POST"],
+  "path": "/marketplaces/mercadolivre/webhook",
+  "name": "Webhook do Mercado Livre",
+  "access": "public"
+}

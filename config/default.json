@@ -1,0 +1,93 @@
+{
+  "shop": {
+    "language": "pt",
+    "timezone": "America/Sao_Paulo",
+    "currency": "BRL",
+    "weightUnit": "kg",
+    "homeUrl": "http://localhost:3001"
+  },
+  "system": {
+    "file_storage": "local",
+    "admin_collection_size": 20,
+    "upload_allowed_mime_types": [
+      "image/jpeg",
+      "image/png",
+      "image/gif",
+      "image/webp",
+      "image/avif",
+      "image/svg+xml"
+    ],
+    "theme": "loja-exemplo",
+    "extensions": [
+      {
+        "name": "company-config",
+        "resolve": "extensions/company-config",
+        "enabled": true,
+        "priority": 5
+      },
+      {
+        "name": "loja-exemplo-home",
+        "resolve": "extensions/loja-exemplo-home",
+        "enabled": true,
+        "priority": 10
+      },
+      {
+        "name": "marketplace-bridge",
+        "resolve": "extensions/marketplace-bridge",
+        "enabled": false,
+        "priority": 20
+      }
+    ]
+  },
+  "catalog": {
+    "collectionPageSize": 12,
+    "product": {
+      "image": {
+        "width": 1200,
+        "height": 1200
+      }
+    },
+    "showOutOfStockProduct": true
+  },
+  "checkout": {
+    "showShippingNote": true
+  },
+  "pricing": {
+    "rounding": "round",
+    "precision": 2,
+    "tax": {
+      "rounding": "round",
+      "precision": 2,
+      "round_level": "total",
+      "price_including_tax": true
+    }
+  },
+  "themeConfig": {
+    "logo": {
+      "alt": "Loja Exemplo",
+      "src": "/logo.svg",
+      "width": 260,
+      "height": 56
+    },
+    "headTags": {
+      "links": [
+        {
+          "rel": "icon",
+          "href": "/favicon.svg",
+          "type": "image/svg+xml"
+        }
+      ],
+      "metas": [
+        {
+          "name": "viewport",
+          "content": "width=device-width, initial-scale=1"
+        },
+        {
+          "name": "theme-color",
+          "content": "#0c1f4d"
+        }
+      ]
+    },
+    "copyRight": "© 2026 Loja Exemplo. Todos os direitos reservados."
+  }
+}

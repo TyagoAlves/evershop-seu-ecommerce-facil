@@ -1,0 +1,60 @@
+[
+  {
+    "name": "Linhas em destaque",
+    "code": "homepage",
+    "description": [
+      {
+        "id": "r__destaques",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__destaques",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Linhas de produtos em destaque na Loja Exemplo."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  },
+  {
+    "name": "Departamentos",
+    "code": "departamentos",
+    "description": [
+      {
+        "id": "r__departamentos",
+        "columns": [
+          {
+            "size": 1,
+            "id": "c__departamentos",
+            "data": {
+              "time": 1729900000000,
+              "blocks": [
+                {
+                  "type": "paragraph",
+                  "data": {
+                    "text": "Todos os departamentos da loja: hidráulica, elétrica, tintas, ferragens e muito mais."
+                  },
+                  "size": 1
+                }
+              ]
+            },
+            "className": "md:grid-cols-1"
+          }
+        ],
+        "size": 1
+      }
+    ]
+  }
+]

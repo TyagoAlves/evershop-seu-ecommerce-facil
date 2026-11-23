@@ -1,0 +1,239 @@
+export const company = {
+  "schema": 1,
+  "slug": "loja-exemplo",
+  "default": true,
+  "domain": "https://lojaexemplo.com.br",
+  "theme": "loja-exemplo",
+  "extension": "loja-exemplo-home",
+  "name": "Loja Exemplo",
+  "shortName": "EXEMPLO",
+  "tagline": "Materiais para casa e obra com atendimento de verdade",
+  "description": "Loja Exemplo é um e-commerce demonstrativo com catálogo, conteúdo e atendimento por WhatsApp. Substitua estes dados pelos da sua empresa.",
+  "city": "São Paulo",
+  "uf": "SP",
+  "region": "São Paulo, SP",
+  "phone": {
+    "display": "(11) 4000-0000",
+    "e164": "+551140000000"
+  },
+  "whatsapp": {
+    "display": "(11) 90000-0000",
+    "number": "5511900000000",
+    "defaultMessage": "Olá! Gostaria de consultar preço e disponibilidade.",
+    "infoMessage": "Olá! Gostaria de informações sobre produtos e preços.",
+    "quoteMessageTemplate": "Olá! Gostaria de consultar preço e disponibilidade de {{productName}}."
+  },
+  "address": {
+    "full": "Rua Exemplo, 100 - Centro, São Paulo - SP, CEP 01000-000",
+    "short": "Centro - São Paulo/SP",
+    "streetAddress": "Rua Exemplo, 100",
+    "locality": "São Paulo",
+    "region": "SP",
+    "postalCode": "01000-000",
+    "country": "BR"
+  },
+  "hours": "Seg a Sex, 9h às 18h",
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+100+Centro+Sao+Paulo+SP",
+  "placeId": null,
+  "facebook": "https://www.example.com/facebook",
+  "instagram": "https://www.example.com/instagram",
+  "publicEmail": "contato@lojaexemplo.com.br",
+  "rating": {
+    "value": "5,0",
+    "reviews": 1,
+    "sourceUrl": null
+  },
+  "nav": [
+    {
+      "id": "nav-1",
+      "label": "Início",
+      "href": "/",
+      "showInDesktop": true
+    },
+    {
+      "id": "nav-2",
+      "label": "Departamentos",
+      "href": "/departamentos",
+      "showInDesktop": true
+    },
+    {
+      "id": "nav-3",
+      "label": "Produtos",
+      "href": "/products",
+      "showInDesktop": true
+    },
+    {
+      "id": "nav-4",
+      "label": "Blog",
+      "href": "/blog",
+      "showInDesktop": true
+    },
+    {
+      "id": "nav-5",
+      "label": "Empresa",
+      "href": "/empresa",
+      "showInDesktop": true
+    },
+    {
+      "id": "nav-6",
+      "label": "Contato",
+      "href": "/contato",
+      "showInDesktop": false
+    }
+  ],
+  "cmsSlugs": [
+    "empresa",
+    "contato",
+    "departamentos"
+  ],
+  "departments": [
+    "Categoria 1",
+    "Categoria 2",
+    "Categoria 3",
+    "Categoria 4",
+    "Categoria 5",
+    "Categoria 6",
+    "Categoria 7",
+    "Categoria 8",
+    "Categoria 9"
+  ],
+  "departmentsIntro": {
+    "eyebrow": "Nossos departamentos",
+    "title": "Tudo o que você precisa, em um só lugar",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Substitua por texto da sua empresa.",
+    "linkLabel": "Ver todos",
+    "linkHref": "/departamentos",
+    "limit": 9
+  },
+  "featured": {
+    "eyebrow": "Destaques",
+    "title": "Escolha por departamento",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Produtos e preços de exemplo.",
+    "linkLabel": "Ver catálogo",
+    "linkHref": "/products",
+    "limit": 6
+  },
+  "differentialsIntro": {
+    "eyebrow": "Por que escolher",
+    "title": "Atendimento, variedade e praticidade"
+  },
+  "differentials": [
+    {
+      "id": "diff-1",
+      "icon": "check",
+      "title": "Lorem ipsum",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt."
+    },
+    {
+      "id": "diff-2",
+      "icon": "star",
+      "title": "Dolor sit amet",
+      "text": "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip."
+    },
+    {
+      "id": "diff-3",
+      "icon": "truck",
+      "title": "Consectetur",
+      "text": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat."
+    },
+    {
+      "id": "diff-4",
+      "icon": "pin",
+      "title": "Adipiscing elit",
+      "text": "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt."
+    }
+  ],
+  "hero": {
+    "eyebrow": "São Paulo - SP",
+    "titlePrefix": "Seu e-commerce com ",
+    "titleHighlight": "identidade própria",
+    "titleSuffix": " e pronto para personalizar.",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Configure sua empresa, catálogo e conteúdo no manifesto.",
+    "primaryLabel": "Falar no WhatsApp",
+    "secondaryLabel": "Ver produtos",
+    "secondaryHref": "/products",
+    "stats": [
+      {
+        "id": "stat-1",
+        "value": "5,0★",
+        "label": "avaliação de exemplo"
+      },
+      {
+        "id": "stat-2",
+        "value": "9",
+        "label": "departamentos"
+      },
+      {
+        "id": "stat-3",
+        "value": "100%",
+        "label": "editável no manifesto"
+      },
+      {
+        "id": "stat-4",
+        "value": "1",
+        "label": "instalação por empresa"
+      }
+    ]
+  },
+  "cta": {
+    "eyebrow": "Atendimento",
+    "title": "Precisa de ajuda? Fale com a equipe.",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Envie sua mensagem pelo WhatsApp.",
+    "label": "Falar com a Loja Exemplo"
+  },
+  "location": {
+    "eyebrow": "Onde estamos",
+    "title": "Visite nossa loja",
+    "text": "",
+    "address": "Rua Exemplo, 100 - Centro, São Paulo - SP, CEP 01000-000",
+    "meta": [
+      {
+        "id": "meta-1",
+        "icon": "clock",
+        "text": "Seg a Sex, 9h às 18h"
+      },
+      {
+        "id": "meta-2",
+        "icon": "phone",
+        "text": "(11) 4000-0000"
+      },
+      {
+        "id": "meta-3",
+        "icon": "star",
+        "text": "5,0 no Google - 1 avaliação"
+      }
+    ],
+    "mapsLabel": "Abrir no Google Maps",
+    "mapsHref": "https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+100+Centro+Sao+Paulo+SP",
+    "whatsappLabel": "WhatsApp (11) 90000-0000",
+    "cardTitle": "Loja Exemplo",
+    "cardLine1": "Rua Exemplo, 100 - Centro",
+    "cardLine2": "São Paulo - SP"
+  },
+  "brand": {
+    "primary": "#116dff",
+    "hover": "#0b52d6",
+    "dark": "#0c1f4d",
+    "soft": "#eef4ff",
+    "shortName": "EXEMPLO"
+  },
+  "priceMode": "quote",
+  "seo": {
+    "description": "E-commerce de exemplo com EverShop. Personalize manifesto, catálogo e conteúdo.",
+    "titleTemplates": {
+      "category": "{{name}} em {{city}} | {{company}}",
+      "product": "{{name}} | {{company}}",
+      "cms": "{{title}} | {{company}}"
+    },
+    "robotsTxt": null
+  },
+  "catalog": {
+    "skuPrefix": "LE",
+    "collections": [],
+    "categories": [],
+    "products": [],
+    "pages": []
+  }
+} as const;
+
+export type Company = typeof company;
