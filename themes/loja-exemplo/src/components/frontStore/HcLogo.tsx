@@ -1,11 +1,15 @@
 import React from 'react';
 import { company } from './generated/company.js';
 
-export function HcLogo({ className = '' }: { className?: string }) {
+export function HcLogo({ className = '', light = false }: { className?: string; light?: boolean }) {
   return (
-    <span className={['le-logo', className].filter(Boolean).join(' ')}>
+    <a
+      href="/"
+      aria-label={company.name}
+      className={['le-logo', light ? 'le-logo--light' : '', className].filter(Boolean).join(' ')}
+    >
       <span className="le-logo__name">{company.name.toUpperCase()}</span>
       <span className="le-logo__sub">{company.shortName}</span>
-    </span>
+    </a>
   );
 }

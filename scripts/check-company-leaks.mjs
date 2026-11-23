@@ -37,12 +37,14 @@ const IGNORE = [
 ];
 
 function parseArgs(argv) {
-  const out = { html: null };
+  const out = { html: null, slug: null };
   for (let i = 0; i < argv.length; i += 1) {
     const a = argv[i];
     if (a === '--html') { out.html = argv[++i]; if (!out.html) throw new Error('--html requer URL'); }
     else if (a.startsWith('--html=')) { out.html = a.slice(7); }
-    else if (a === '--help' || a === '-h') { console.log('Uso: node scripts/check-company-leaks.mjs [--html <url>]'); process.exit(0); }
+    else if (a === '--slug') { out.slug = argv[++i]; if (!out.slug) throw new Error('--slug requer valor'); }
+    else if (a.startsWith('--slug=')) { out.slug = a.slice('--slug='.length); if (!out.slug) throw new Error('--slug requer valor'); }
+    else if (a === '--help' || a === '-h') { console.log('Uso: node scripts/check-company-leaks.mjs [--slug <slug>] [--html <url>]'); process.exit(0); }
     else throw new Error('argumento desconhecido: ' + a);
   }
   return out;
@@ -66,6 +68,16 @@ function trackedOrAllFiles() {
     walk(ROOT);
     return out;
   }
+}
+
+function extraFiles(slug) {
+  const extra = [
+    'config/generated/company.json',
+    'themes/loja-exemplo/src/components/frontStore/generated/company.ts',
+    'extensions/loja-exemplo-home/generated/widgets.json'
+  ];
+  if (slug) extra.push('companies/' + slug + '.json');
+  return extra;
 }
 
 function isIgnored(rel) { return IGNORE.some(re => re.test(rel)); }
@@ -107,8 +119,16 @@ try { opts = parseArgs(process.argv.slice(2)); } catch (e) { console.error(e.mes
 
 const findings = [];
 try {
-  const files = [...new Set(trackedOrAllFiles())];
+  const files = [...new Set([...trackedOrAllFiles(), ...extraFiles(opts.slug)])];
   findings.push(...files.flatMap(scanFile));
+
+  if (opts.slug) {
+    const manifestRel = 'companies/' + opts.slug + '.json';
+    if (!fs.existsSync(path.join(ROOT, manifestRel))) {
+      findings.push({ file: manifestRel, line: 0, col: 0, rule: 'manifesto-ausente', value: '' });
+    }
+  }
+
   if (opts.html) findings.push(...(await scanHtml(opts.html)));
 } catch (e) { console.error('falha na varredura: ' + e.message); process.exit(1); }
 
