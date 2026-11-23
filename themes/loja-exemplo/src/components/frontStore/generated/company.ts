@@ -36,7 +36,6 @@ export const company = {
   "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Rua+Exemplo+100+Centro+Sao+Paulo+SP",
   "placeId": null,
   "facebook": "https://www.example.com/facebook",
-  "instagram": "https://www.example.com/instagram",
   "publicEmail": "contato@lojaexemplo.com.br",
   "rating": {
     "value": "5,0",

@@ -19,7 +19,7 @@ export function StructuredData() {
       addressCountry: company.address.country
     },
     openingHours: company.hours,
-    sameAs: [company.facebook, company.instagram].filter(Boolean)
+    sameAs: [company.facebook].filter(Boolean)
   };
   return (
     <script

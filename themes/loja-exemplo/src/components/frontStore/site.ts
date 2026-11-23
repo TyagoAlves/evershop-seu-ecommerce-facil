@@ -11,7 +11,6 @@ export const site = {
   mapsUrl: company.mapsUrl,
   email: company.publicEmail,
   socials: {
-    facebook: company.facebook,
-    instagram: company.instagram
+    facebook: company.facebook
   }
 } as const;
