@@ -19,3 +19,8 @@ Share,Compartilhar
 Media library,Biblioteca de m√≠dia
 Landing Pages,P√°ginas de destino
 Quick Links,Links r√°pidos
+"Languages","Idiomas"
+"Default language","Idioma padr„o"
+"The storefront's primary language. Pages in this language have no URL prefix.","Idioma principal da loja. P·ginas neste idioma n„o tÍm prefixo de URL."
+"Admin panel language","Idioma do painel administrativo"
+"The language of the admin panel, independent of the storefront.","Idioma do painel administrativo, independente da loja."
