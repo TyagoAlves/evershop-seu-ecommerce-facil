@@ -14,13 +14,15 @@ interface HcDepartmentsProps {
   categories?: { items?: CategoryItem[] } | null;
 }
 
+// Categorias de demonstração, usadas apenas enquanto o catálogo está vazio.
+// Substitua pelo catálogo real da sua empresa (ver companies/<slug>.json).
 const FALLBACK_CATEGORIES: CategoryItem[] = [
-  { name: 'Hidráulica', url: '/category/hidraulica', metaDescription: 'Tubos, conexões e acessórios para levar água até onde você precisar.', image: { url: '/images/categoria-hidraulica.svg', alt: 'Hidráulica' } },
-  { name: 'Elétrica', url: '/category/eletrica', metaDescription: 'Fios, cabos, disjuntores e componentes para instalações seguras.', image: { url: '/images/categoria-eletrica.svg', alt: 'Elétrica' } },
-  { name: 'Tintas e acabamento', url: '/category/tintas', metaDescription: 'Tintas, massas, vernizes e ferramentas para deixar tudo bonito.', image: { url: '/images/categoria-tintas.svg', alt: 'Tintas' } },
-  { name: 'Ferragens', url: '/category/ferragens', metaDescription: 'Fechaduras, parafusos e ferragens para portas, janelas e móveis.', image: { url: '/images/categoria-ferragens.svg', alt: 'Ferragens' } },
-  { name: 'Ferramentas', url: '/category/ferramentas', metaDescription: 'Ferramentas manuais e elétricas para cada etapa do trabalho.', image: { url: '/images/categoria-ferramentas.svg', alt: 'Ferramentas' } },
-  { name: 'Materiais de construção', url: '/category/materiais-de-construcao', metaDescription: 'Cimento, areia, brita, tijolos e o básico de toda obra.', image: { url: '/images/categoria-materiais.svg', alt: 'Materiais de construção' } }
+  { name: 'Categoria 1', url: '/category/categoria-1', metaDescription: 'Descreva esta categoria no catálogo da sua empresa.', image: { url: '/images/categoria-coberturas.svg', alt: 'Categoria 1' } },
+  { name: 'Categoria 2', url: '/category/categoria-2', metaDescription: 'Descreva esta categoria no catálogo da sua empresa.', image: { url: '/images/categoria-eletrica.svg', alt: 'Categoria 2' } },
+  { name: 'Categoria 3', url: '/category/categoria-3', metaDescription: 'Descreva esta categoria no catálogo da sua empresa.', image: { url: '/images/categoria-coberturas.svg', alt: 'Categoria 3' } },
+  { name: 'Categoria 4', url: '/category/categoria-4', metaDescription: 'Descreva esta categoria no catálogo da sua empresa.', image: { url: '/images/categoria-iluminacao.svg', alt: 'Categoria 4' } },
+  { name: 'Categoria 5', url: '/category/categoria-5', metaDescription: 'Descreva esta categoria no catálogo da sua empresa.', image: { url: '/images/categoria-materiais.svg', alt: 'Categoria 5' } },
+  { name: 'Categoria 6', url: '/category/categoria-6', metaDescription: 'Descreva esta categoria no catálogo da sua empresa.', image: { url: '/images/categoria-materiais.svg', alt: 'Categoria 6' } }
 ];
 
 export default function HcDepartments({ categories }: HcDepartmentsProps) {

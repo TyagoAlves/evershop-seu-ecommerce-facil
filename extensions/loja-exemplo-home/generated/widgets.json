@@ -99,7 +99,7 @@
     "sortOrder": 20,
     "settings": {
       "eyebrow": "Nossos departamentos",
-      "title": "Tudo o que você precisa, em um só lugar",
+      "title": "Tudo o que você procura, em um só lugar",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Substitua por texto da sua empresa.",
       "linkLabel": "Ver todos",
       "linkHref": "/departamentos",
@@ -109,7 +109,7 @@
   {
     "type": "hc_featured_products",
     "name": "Produtos em destaque – Loja Exemplo",
-    "description": "Grade de produtos sob consulta com dados do catálogo.",
+    "description": "Grade de produtos com dados do catálogo.",
     "category": "commerce",
     "icon": "Package",
     "sortOrder": 30,
@@ -125,7 +125,7 @@
   {
     "type": "hc_differentials",
     "name": "Diferenciais – Loja Exemplo",
-    "description": "Quatro motivos para comprar na Loja Exemplo.",
+    "description": "Quatro motivos para comprar com a gente.",
     "category": "content",
     "icon": "BadgeCheck",
     "sortOrder": 40,
@@ -163,7 +163,7 @@
   {
     "type": "hc_cta",
     "name": "CTA WhatsApp – Loja Exemplo",
-    "description": "Bloco de orçamento sem compromisso pelo WhatsApp.",
+    "description": "Bloco de atendimento pelo WhatsApp.",
     "category": "marketing",
     "icon": "MessageCircle",
     "sortOrder": 50,

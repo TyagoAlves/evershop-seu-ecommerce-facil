@@ -28,19 +28,19 @@
       "backgroundImage": null,
       "backgroundOpacity": 45,
       "eyebrow": "Seja bem-vindo",
-      "titleBefore": "Tudo para sua obra com ",
-      "titleAccent": "preço justo",
+      "titleBefore": "Sua loja com ",
+      "titleAccent": "qualidade e variedade",
       "titleAfter": " e atendimento de verdade.",
       "text": "Conheça nosso catálogo e nosso atendimento. Estamos à disposição para ajudar você.",
-      "primaryLabel": "Pedir orçamento pelo WhatsApp",
+      "primaryLabel": "Falar no WhatsApp",
       "primaryHref": "https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20produtos%20e%20pre%C3%A7os.",
       "secondaryLabel": "Ver produtos",
       "secondaryHref": "/products",
       "stats": [
-        { "id": "stat-1", "value": "4,5★", "label": "avaliação no Google" },
+        { "id": "stat-1", "value": "4,5★", "label": "avaliação de exemplo" },
         { "id": "stat-2", "value": "9", "label": "departamentos" },
-        { "id": "stat-3", "value": "2", "label": "lojas no mesmo endereço" },
-        { "id": "stat-4", "value": "7", "label": "dias de funcionamento" }
+        { "id": "stat-3", "value": "2", "label": "instalação única" },
+        { "id": "stat-4", "value": "7", "label": "dias de atendimento" }
       ]
     }
   },
@@ -53,8 +53,8 @@
     "sortOrder": 20,
     "settings": {
       "eyebrow": "Nossos departamentos",
-      "title": "Tudo o que você precisa, em um só lugar",
-      "description": "Uma loja completa para construir, reformar e manter — com orientação na hora da compra.",
+      "title": "Tudo o que você procura, em um só lugar",
+      "description": "Um catálogo completo para você escolher com tranquilidade.",
       "linkLabel": "Ver todos",
       "linkHref": "/departamentos",
       "limit": 9
@@ -63,14 +63,14 @@
   {
     "type": "hc_featured_products",
     "name": "Produtos em destaque – Loja Exemplo",
-    "description": "Grade de produtos sob consulta com dados do catálogo.",
+    "description": "Grade de produtos com dados do catálogo.",
     "category": "commerce",
     "icon": "Package",
     "sortOrder": 30,
     "settings": {
       "eyebrow": "Linhas em destaque",
-      "title": "Escolha por departamento, compre com confiança",
-      "description": "Preços sob consulta: a variedade de marcas e especificações muda conforme o projeto. Monte sua lista com a nossa equipe.",
+      "title": "Escolha por categoria, compre com confiança",
+      "description": "Preços e disponibilidade sob consulta. Monte sua lista com a nossa equipe.",
       "linkLabel": "Ver catálogo",
       "linkHref": "/products",
       "limit": 6
@@ -79,25 +79,25 @@
   {
     "type": "hc_differentials",
     "name": "Diferenciais – Loja Exemplo",
-    "description": "Quatro motivos para comprar na Loja Exemplo.",
+    "description": "Quatro motivos para comprar com a gente.",
     "category": "content",
     "icon": "BadgeCheck",
     "sortOrder": 40,
     "settings": {
-      "eyebrow": "Por que a Exemplo",
-      "title": "Preço justo, variedade e gente que ajuda",
+      "eyebrow": "Por que escolher a gente",
+      "title": "Qualidade, variedade e gente que ajuda",
       "items": [
         {
           "id": "diff-1",
           "icon": "check",
-          "title": "Os menores preços",
-          "text": "Preços competitivos para você comprar mais com o seu orçamento, sem abrir mão da qualidade."
+          "title": "Preços que cabem no seu bolso",
+          "text": "Preços competitivos para você comprar bem, sem abrir mão da qualidade."
         },
         {
           "id": "diff-2",
           "icon": "star",
           "title": "Atendimento que ajuda",
-          "text": "Nossa equipe conhece os produtos e ajuda a escolher o material certo para a sua obra."
+          "text": "Nossa equipe conhece os produtos e ajuda você a escolher o que precisa."
         },
         {
           "id": "diff-3",
@@ -108,7 +108,7 @@
         {
           "id": "diff-4",
           "icon": "pin",
-          "title": "Aqui na sua região",
+          "title": "Perto de você",
           "text": "Localização fácil, com retirada e entrega combinada pelo WhatsApp."
         }
       ]
@@ -117,13 +117,13 @@
   {
     "type": "hc_cta",
     "name": "CTA WhatsApp – Loja Exemplo",
-    "description": "Bloco de orçamento sem compromisso pelo WhatsApp.",
+    "description": "Bloco de atendimento pelo WhatsApp.",
     "category": "marketing",
     "icon": "MessageCircle",
     "sortOrder": 50,
     "settings": {
-      "eyebrow": "Orçamento sem compromisso",
-      "title": "Precisa de algum material? A gente te ajuda.",
+      "eyebrow": "Atendimento sem compromisso",
+      "title": "Precisa de algo? A gente te ajuda.",
       "text": "Envie sua mensagem pelo WhatsApp, tire suas dúvidas e combine a retirada ou a entrega.",
       "buttonLabel": "Falar com a Loja Exemplo",
       "buttonHref": "https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20informa%C3%A7%C3%B5es%20sobre%20produtos%20e%20pre%C3%A7os."
