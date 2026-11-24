@@ -21,11 +21,19 @@ function hasWidgetIn(areaId, widgets) {
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const [narrowCanvas, setNarrowCanvas] = useState(false);
   const inPageBuilder = useIsInPageBuilderIframe();
   const { widgets } = useAppState() || {};
-  // No editor, mantemos o menu mobile aberto para que os links possam ser
-  // vistos e editados no canvas (modo celular). Na loja real, abre ao clicar.
-  const mobileOpen = inPageBuilder || open;
+  // No editor do page builder, abrimos o menu mobile somente quando o canvas
+  // estreito (modo Phone/Tablet). Assim nao aparecem dois menus ao mesmo tempo.
+  useEffect(() => {
+    if (!inPageBuilder || typeof window === 'undefined') return;
+    const sync = () => setNarrowCanvas(window.innerWidth <= 768);
+    sync();
+    window.addEventListener('resize', sync);
+    return () => window.removeEventListener('resize', sync);
+  }, [inPageBuilder]);
+  const mobileOpen = (inPageBuilder && narrowCanvas) || open;
   // O menu do manifesto é o padrão: Ele aparece quando nenhum widget de menu
   // foi posicionado na área global do cabeçalho. Assim o site nunca fica sem nav.
   const hasDesktopMenu = hasWidgetIn('headerMenuDesktop', widgets);
