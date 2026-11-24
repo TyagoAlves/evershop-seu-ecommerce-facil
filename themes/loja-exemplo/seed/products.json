@@ -3,15 +3,15 @@
     "type": "simple",
     "visibility": true,
     "status": true,
-    "sku": "HC-LINHA-HIDRAULICA",
-    "name": "Linha hidráulica",
-    "url_key": "linha-hidraulica",
+    "sku": "LE-CATEGORIA-1",
+    "name": "Categoria 1",
+    "url_key": "categoria-1",
     "price": 0,
     "weight": 0,
     "no_shipping_required": true,
-    "meta_title": "Linha hidráulica | Loja Exemplo",
-    "meta_description": "Tubos, conexões, torneiras, registros e bombas para instalações de água com segurança e durabilidade. Preço sob consulta pelo WhatsApp.",
-    "meta_keywords": "linha hidráulica, tubos, conexões, torneiras, Loja Exemplo",
+    "meta_title": "Categoria 1 | Loja Exemplo",
+    "meta_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "linha categoria 1, tubos, conexões, torneiras, Loja Exemplo",
     "description": [
       {
         "id": "r__linha_hidraulica",
@@ -25,14 +25,14 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Tubos, conexões, torneiras, registros e bombas para instalações de água com segurança e durabilidade."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 },
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Preço sob consulta: a variedade de marcas, bitolas e especificações muda conforme o projeto. Fale com a nossa equipe pelo WhatsApp para receber o orçamento."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 }
@@ -50,7 +50,7 @@
     "collections": [
       "homepage"
     ],
-    "category": "hidraulica",
+    "category": "categoria-1",
     "images": [
       {
         "url": "images/produto-hidraulica.svg",
@@ -62,15 +62,15 @@
     "type": "simple",
     "visibility": true,
     "status": true,
-    "sku": "HC-LINHA-ELETRICA",
-    "name": "Linha elétrica",
-    "url_key": "linha-eletrica",
+    "sku": "LE-CATEGORIA-2",
+    "name": "Categoria 2",
+    "url_key": "categoria-2",
     "price": 0,
     "weight": 0,
     "no_shipping_required": true,
-    "meta_title": "Linha elétrica | Loja Exemplo",
-    "meta_description": "Fios, cabos, disjuntores, tomadas e luminárias para instalações residenciais, comerciais e industriais. Preço sob consulta.",
-    "meta_keywords": "linha elétrica, fios, cabos, disjuntores, Loja Exemplo",
+    "meta_title": "Categoria 2 | Loja Exemplo",
+    "meta_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "linha categoria 2, fios, cabos, disjuntores, Loja Exemplo",
     "description": [
       {
         "id": "r__linha_eletrica",
@@ -84,14 +84,14 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Fios, cabos, disjuntores, tomadas e luminárias para instalações residenciais, comerciais e industriais."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 },
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Preço sob consulta: informe a bitola, a corrente do circuito e a marca desejada. Orçamos pelo WhatsApp."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 }
@@ -109,7 +109,7 @@
     "collections": [
       "homepage"
     ],
-    "category": "eletrica",
+    "category": "categoria-2",
     "images": [
       {
         "url": "images/produto-eletrica.svg",
@@ -121,36 +121,36 @@
     "type": "simple",
     "visibility": true,
     "status": true,
-    "sku": "HC-TINTAS-ACABAMENTO",
-    "name": "Tintas e acabamento",
-    "url_key": "tintas-e-acabamento",
+    "sku": "LE-CATEGORIA-3",
+    "name": "Categoria 3",
+    "url_key": "categoria-3",
     "price": 0,
     "weight": 0,
     "no_shipping_required": true,
-    "meta_title": "Tintas e acabamento | Loja Exemplo",
-    "meta_description": "Tintas, massas, vernizes, pincéis e rolos para preparar e finalizar paredes, madeira e metal. Preço sob consulta.",
-    "meta_keywords": "tintas, acabamento, massa corrida, verniz, Loja Exemplo",
+    "meta_title": "Categoria 3 | Loja Exemplo",
+    "meta_description": "Produtos da categoria 3. Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "produtos, acabamento, massa corrida, verniz, Loja Exemplo",
     "description": [
       {
-        "id": "r__tintas_acabamento",
+        "id": "r__produtos_acabamento",
         "columns": [
           {
             "size": 1,
-            "id": "c__tintas_acabamento",
+            "id": "c__produtos_acabamento",
             "data": {
               "time": 1729900000000,
               "blocks": [
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Tintas, massas, vernizes, pincéis e rolos para preparar e finalizar paredes, madeira e metal."
+                    "text": "Produtos da categoria 3. Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 },
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Preço sob consulta: traga a medida da área para calcularmos o rendimento e a quantidade de latas."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 }
@@ -168,10 +168,10 @@
     "collections": [
       "homepage"
     ],
-    "category": "tintas",
+    "category": "categoria-3",
     "images": [
       {
-        "url": "images/produto-tintas.svg",
+        "url": "images/produto-produtos.svg",
         "isMain": true
       }
     ]
@@ -180,36 +180,36 @@
     "type": "simple",
     "visibility": true,
     "status": true,
-    "sku": "HC-FERRAGENS-FIXADORES",
-    "name": "Ferragens e fixadores",
-    "url_key": "ferragens-e-fixadores",
+    "sku": "LE-CATEGORIA-4",
+    "name": "Categoria 4",
+    "url_key": "categoria-4",
     "price": 0,
     "weight": 0,
     "no_shipping_required": true,
-    "meta_title": "Ferragens e fixadores | Loja Exemplo",
-    "meta_description": "Fechaduras, dobradiças, parafusos, pregos e buchas para todos os tipos de montagem e reparo. Preço sob consulta.",
-    "meta_keywords": "ferragens, fixadores, fechaduras, parafusos, Loja Exemplo",
+    "meta_title": "Categoria 4 e fixadores | Loja Exemplo",
+    "meta_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "categoria 4, fixadores, fechaduras, parafusos, Loja Exemplo",
     "description": [
       {
-        "id": "r__ferragens_fixadores",
+        "id": "r__categoria 4_fixadores",
         "columns": [
           {
             "size": 1,
-            "id": "c__ferragens_fixadores",
+            "id": "c__categoria 4_fixadores",
             "data": {
               "time": 1729900000000,
               "blocks": [
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Fechaduras, dobradiças, parafusos, pregos e buchas para todos os tipos de montagem e reparo."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 },
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Preço sob consulta: informe a aplicação e a quantidade para montarmos o orçamento."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 }
@@ -227,10 +227,10 @@
     "collections": [
       "homepage"
     ],
-    "category": "ferragens",
+    "category": "categoria-4",
     "images": [
       {
-        "url": "images/produto-ferragens.svg",
+        "url": "images/produto-categoria 4.svg",
         "isMain": true
       }
     ]
@@ -239,36 +239,36 @@
     "type": "simple",
     "visibility": true,
     "status": true,
-    "sku": "HC-FERRAMENTAS",
-    "name": "Ferramentas",
-    "url_key": "ferramentas",
+    "sku": "LE-CATEGORIA-5",
+    "name": "Categoria 5",
+    "url_key": "categoria-5",
     "price": 0,
     "weight": 0,
     "no_shipping_required": true,
-    "meta_title": "Ferramentas | Loja Exemplo",
-    "meta_description": "Furadeiras, brocas, chaves, lixadeiras e medidores para o profissional e para quem faz em casa. Preço sob consulta.",
-    "meta_keywords": "ferramentas, furadeiras, brocas, lixadeiras, Loja Exemplo",
+    "meta_title": "Categoria 5 | Loja Exemplo",
+    "meta_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "categoria 5, furadeiras, brocas, lixadeiras, Loja Exemplo",
     "description": [
       {
-        "id": "r__ferramentas_linha",
+        "id": "r__categoria 5_linha",
         "columns": [
           {
             "size": 1,
-            "id": "c__ferramentas_linha",
+            "id": "c__categoria 5_linha",
             "data": {
               "time": 1729900000000,
               "blocks": [
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Furadeiras, brocas, chaves, lixadeiras e medidores para o profissional e para quem faz em casa."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 },
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Preço sob consulta: conte com a nossa equipe para montar um kit conforme o tipo de serviço."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 }
@@ -286,10 +286,10 @@
     "collections": [
       "homepage"
     ],
-    "category": "ferramentas",
+    "category": "categoria-5",
     "images": [
       {
-        "url": "images/produto-ferramentas.svg",
+        "url": "images/produto-categoria 5.svg",
         "isMain": true
       }
     ]
@@ -298,36 +298,36 @@
     "type": "simple",
     "visibility": true,
     "status": true,
-    "sku": "HC-MATERIAIS-COBERTURAS",
-    "name": "Materiais e coberturas",
-    "url_key": "materiais-e-coberturas",
+    "sku": "LE-CATEGORIA-6",
+    "name": "Categoria 6",
+    "url_key": "categoria-6",
     "price": 0,
     "weight": 0,
     "no_shipping_required": true,
-    "meta_title": "Materiais e coberturas | Loja Exemplo",
-    "meta_description": "Cimento, areia, brita, tijolos, telhas e calhas para a estrutura e a cobertura da sua obra. Preço sob consulta.",
-    "meta_keywords": "materiais de construção, coberturas, cimento, telhas, Loja Exemplo",
+    "meta_title": "Materiais e categoria 7 | Loja Exemplo",
+    "meta_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "categoria 6, categoria 7, cimento, telhas, Loja Exemplo",
     "description": [
       {
-        "id": "r__materiais_coberturas",
+        "id": "r__materiais_categoria 7",
         "columns": [
           {
             "size": 1,
-            "id": "c__materiais_coberturas",
+            "id": "c__materiais_categoria 7",
             "data": {
               "time": 1729900000000,
               "blocks": [
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Cimento, areia, brita, tijolos, telhas e calhas para a estrutura e a cobertura da sua obra."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 },
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Preço sob consulta: informe o volume e o local de entrega para calcularmos o orçamento."
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 }
@@ -345,7 +345,7 @@
     "collections": [
       "homepage"
     ],
-    "category": "materiais-de-construcao",
+    "category": "categoria-6",
     "images": [
       {
         "url": "images/produto-materiais.svg",
@@ -357,15 +357,15 @@
     "type": "simple",
     "visibility": true,
     "status": true,
-    "sku": "HC-ORCAMENTO",
-    "name": "Solicitar orçamento",
-    "url_key": "solicitar-orcamento",
+    "sku": "LE-CATEGORIA-9",
+    "name": "Categoria 9",
+    "url_key": "categoria-9",
     "price": 0,
     "weight": 0,
     "no_shipping_required": true,
     "meta_title": "Solicitar orçamento | Loja Exemplo",
-    "meta_description": "Monte seu orçamento de materiais de construção com a equipe da Loja Exemplo pelo WhatsApp.",
-    "meta_keywords": "orçamento, materiais de construção, WhatsApp, Loja Exemplo",
+    "meta_description": "Monte seu orçamento de categoria 6 com a equipe da Loja Exemplo pelo WhatsApp.",
+    "meta_keywords": "orçamento, categoria 6, WhatsApp, Loja Exemplo",
     "description": [
       {
         "id": "r__orcamento_produto",
@@ -404,7 +404,7 @@
     "collections": [
       "homepage"
     ],
-    "category": "orcamento-e-entrega",
+    "category": "categoria-9",
     "images": [
       {
         "url": "images/produto-orcamento.svg",

@@ -36,7 +36,7 @@ try {
      ON CONFLICT (name) DO UPDATE SET value = EXCLUDED.value`,
     [
       'Loja Exemplo',
-      'Materiais de construção, hidráulica, elétrica, tintas, ferragens e ferramentas em Sua Cidade, UF. Preço justo e atendimento próximo nas lojas 1 e 2.',
+      'Loja Exemplo: e-commerce demonstrativo com catálogo, conteúdo e atendimento por WhatsApp. Substitua os dados pelos da sua empresa.',
       '/favicon.svg'
     ]
   );

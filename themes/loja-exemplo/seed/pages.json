@@ -42,7 +42,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Trabalhamos com preços competitivos em todos os produtos para que você compre mais com o seu orçamento, sem abrir mão da qualidade. Nossa equipe conhece os produtos e ajuda você a escolher o material certo para a sua obra, reforma ou manutenção — presencialmente ou pelo WhatsApp."
+                    "text": "Trabalhamos com preços competitivos em todos os produtos para que você compre mais com o seu produtos e serviços, sem abrir mão da qualidade. Nossa equipe conhece os produtos e ajuda você a escolher o material certo para a sua produtos e serviços, reforma ou manutenção — presencialmente ou pelo WhatsApp."
                   },
                   "size": 1
                 },
@@ -69,7 +69,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Rua Exemplo, 100, Centro, São Paulo - SP, CEP 01000-000. Funcionamos de segunda a sábado, das 8h às 18h, e aos domingos, das 9h às 12h."
+                    "text": "Rua Exemplo, 100, Centro, Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 }
@@ -87,8 +87,8 @@
     "url_key": "contato",
     "name": "Contato",
     "meta_title": "Contato | Loja Exemplo",
-    "meta_description": "Fale com a Loja Exemplo pelo WhatsApp (11) 90000-0000 ou telefone (11) 4000-0000. Endereço e horários em São Paulo - SP.",
-    "meta_keywords": "contato, WhatsApp, telefone, endereço, São Paulo, Loja Exemplo",
+    "meta_description": "Fale com a Loja Exemplo pelo WhatsApp (11) 90000-0000 ou telefone (11) 4000-0000. Endereço e horários em Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "contato, WhatsApp, telefone, endereço, Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
     "content": [
       {
         "id": "r__contato",
@@ -110,7 +110,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Precisa de um orçamento, de ajuda para escolher um material ou quer saber se temos um produto em estoque? Fale com a nossa equipe — atendemos pelo WhatsApp e presencialmente nas lojas 1 e 2."
+                    "text": "Precisa de um produtos e serviços, de ajuda para escolher um material ou quer saber se temos um produto em estoque? Fale com a nossa equipe — atendemos pelo WhatsApp e presencialmente nas lojas 1 e 2."
                   },
                   "size": 1
                 },
@@ -121,7 +121,7 @@
                     "items": [
                       "WhatsApp: (11) 90000-0000",
                       "Telefone: (11) 4000-0000",
-                      "Endereço: Rua Exemplo, 100, Centro, São Paulo - SP, CEP 01000-000",
+                      "Endereço: Rua Exemplo, 100, Centro, Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
                       "Horário: Seg a Sáb, 8h às 18h · Dom, 9h às 12h"
                     ]
                   },
@@ -156,7 +156,7 @@
     "name": "Departamentos",
     "meta_title": "Departamentos | Loja Exemplo",
     "meta_description": "Conheça os departamentos da Loja Exemplo e encontre o que você precisa.",
-    "meta_keywords": "departamentos, hidráulica, elétrica, tintas, ferragens, ferramentas, São Paulo",
+    "meta_keywords": "departamentos, produtos e serviços, produtos e serviços, produtos e serviços, produtos e serviços, produtos e serviços, Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
     "content": [
       {
         "id": "r__departamentos_page",
@@ -178,7 +178,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Tudo o que você precisa para construir, reformar e manter, reunido em duas lojas no mesmo endereço em São Paulo."
+                    "text": "Tudo o que você precisa para construir, reformar e manter, reunido em duas lojas no mesmo endereço em Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                   },
                   "size": 1
                 },
@@ -187,15 +187,15 @@
                   "data": {
                     "style": "unordered",
                     "items": [
-                      "Hidráulica — tubos, conexões, torneiras, bombas e filtros",
-                      "Elétrica — fios, cabos, disjuntores, tomadas e luminárias",
-                      "Tintas e acabamento — tintas, massas, vernizes, pincéis e rolos",
-                      "Ferragens — fechaduras, dobradiças, parafusos e buchas",
-                      "Ferramentas — furadeiras, chaves, lixadeiras e medidores",
-                      "Materiais de construção — cimento, areia, brita, tijolos e blocos",
-                      "Coberturas — telhas, calhas, rufos e mantas",
-                      "Iluminação — lâmpadas LED, luminárias e refletores",
-                      "Orçamento e entrega — monte sua lista e combine a entrega"
+                      "produtos e serviços — tubos, conexões, torneiras, bombas e filtros",
+                      "produtos e serviços — fios, cabos, disjuntores, tomadas e luminárias",
+                      "produtos e serviços e acabamento — produtos e serviços, massas, vernizes, pincéis e rolos",
+                      "produtos e serviços — fechaduras, dprodutos e serviçosdiças, parafusos e buchas",
+                      "produtos e serviços — furadeiras, chaves, lixadeiras e medidores",
+                      "Materiais de produtos e serviços — produtos e serviços, produtos e serviços, produtos e serviços, produtos e serviços e blocos",
+                      "produtos e serviços — produtos e serviços, produtos e serviços, rufos e mantas",
+                      "produtos e serviços — lâmpadas LED, luminárias e refletores",
+                      "Conteúdo de demonstração. Substitua pelos dados da sua empresa."
                     ]
                   },
                   "size": 1

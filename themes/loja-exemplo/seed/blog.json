@@ -1,43 +1,43 @@
 {
   "categories": [
     {
-      "name": "Hidráulica",
+      "name": "produtos e serviços",
       "url_key": "hidraulica",
       "comment_policy": "moderated",
       "status": 1,
       "short_description": "Dicas sobre tubulações, conexões e instalações de água."
     },
     {
-      "name": "Elétrica",
+      "name": "produtos e serviços",
       "url_key": "eletrica",
       "comment_policy": "moderated",
       "status": 1,
-      "short_description": "Orientações para instalações elétricas seguras."
+      "short_description": "Orientações para instalações produtos e serviçoss seguras."
     },
     {
-      "name": "Tintas",
-      "url_key": "tintas",
+      "name": "produtos e serviços",
+      "url_key": "produtos e serviços",
       "comment_policy": "moderated",
       "status": 1,
-      "short_description": "Acabamento, preparo de superfície e escolha de tintas."
+      "short_description": "Acabamento, preparo de superfície e escolha de produtos e serviços."
     },
     {
-      "name": "Obras",
-      "url_key": "obras",
+      "name": "produtos e serviçoss",
+      "url_key": "produtos e serviçoss",
       "comment_policy": "moderated",
       "status": 1,
-      "short_description": "Planejamento e materiais para reformas e construção."
+      "short_description": "Planejamento e materiais para reformas e produtos e serviços."
     },
     {
-      "name": "Coberturas",
-      "url_key": "coberturas",
+      "name": "produtos e serviços",
+      "url_key": "produtos e serviços",
       "comment_policy": "moderated",
       "status": 1,
-      "short_description": "Telhados, calhas e impermeabilização."
+      "short_description": "Telhados, produtos e serviços e impermeabilização."
     },
     {
-      "name": "Ferramentas",
-      "url_key": "ferramentas",
+      "name": "produtos e serviços",
+      "url_key": "produtos e serviços",
       "comment_policy": "moderated",
       "status": 1,
       "short_description": "Kits e equipamentos para pequenos reparos."
@@ -63,17 +63,17 @@
   ],
   "posts": [
     {
-      "name": "Como escolher os tubos certos para sua instalação hidráulica",
+      "name": "Como escolher os tubos certos para sua instalação produtos e serviços",
       "url_key": "como-escolher-tubos-hidraulicos",
       "status": 1,
-      "category": "Hidráulica",
+      "category": "produtos e serviços",
       "tags": [
         "Dicas"
       ],
       "short_description": "PVC, PPR ou cobre? Entenda as diferenças e escolha o material ideal para cada tipo de instalação.",
       "thumbnail": "images/blog-hidraulica.svg",
       "meta_title": "Como escolher tubos hidráulicos | Loja Exemplo",
-      "meta_description": "PVC, PPR ou cobre? Entenda as diferenças e escolha o material ideal para cada tipo de instalação hidráulica.",
+      "meta_description": "PVC, PPR ou cobre? Entenda as diferenças e escolha o material ideal para cada tipo de instalação produtos e serviços.",
       "content": [
         {
           "id": "r1",
@@ -94,7 +94,7 @@
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Tubos PVC são muito usados em água fria e esgoto: são leves, econômicos e fáceis de instalar. Já o PPR é indicado para água quente e fria, com conexões por fusão que reduzem o risco de vazamentos. O cobre é resistente e tradicional, mas exige mão de obra especializada."
+                      "text": "Tubos PVC são muito usados em água fria e esgoto: são leves, econômicos e fáceis de instalar. Já o PPR é indicado para água quente e fria, com conexões por fusão que reduzem o risco de vazamentos. O cobre é resistente e tradicional, mas exige mão de produtos e serviços especializada."
                     },
                     "size": 1
                   },
@@ -113,18 +113,18 @@
       ]
     },
     {
-      "name": "Disjuntores e fios: como dimensionar uma instalação elétrica segura",
+      "name": "Disjuntores e fios: como dimensionar uma instalação produtos e serviços segura",
       "url_key": "disjuntores-e-fios-seguranca-eletrica",
       "status": 1,
-      "category": "Elétrica",
+      "category": "produtos e serviços",
       "tags": [
         "Segurança",
         "Dicas"
       ],
-      "short_description": "Bitola dos fios, corrente do disjuntor e aterramento: os pontos que não podem ficar de fora de uma obra.",
+      "short_description": "Bitola dos fios, corrente do disjuntor e aterramento: os pontos que não podem ficar de fora de uma produtos e serviços.",
       "thumbnail": "images/blog-eletrica.svg",
-      "meta_title": "Como dimensionar uma instalação elétrica segura | Loja Exemplo",
-      "meta_description": "Bitola dos fios, corrente do disjuntor e aterramento: os pontos que não podem ficar de fora de uma obra.",
+      "meta_title": "Como dimensionar uma instalação produtos e serviços segura | Loja Exemplo",
+      "meta_description": "Bitola dos fios, corrente do disjuntor e aterramento: os pontos que não podem ficar de fora de uma produtos e serviços.",
       "content": [
         {
           "id": "r2",
@@ -138,14 +138,14 @@
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Uma instalação elétrica segura começa pelo dimensionamento correto dos circuitos. A bitola do fio precisa comportar a corrente prevista sem aquecer, e o disjuntor deve proteger esse circuito contra sobrecargas e curtos-circuitos."
+                      "text": "Uma instalação produtos e serviços segura começa pelo dimensionamento correto dos circuitos. A bitola do fio precisa comportar a corrente prevista sem aquecer, e o disjuntor deve proteger esse circuito contra sobrecargas e curtos-circuitos."
                     },
                     "size": 1
                   },
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Circuitos de iluminação, tomadas e aparelhos de grande porte devem ser separados. Em áreas úmidas, como cozinhas e banheiros, use dispositivos de proteção adequados e siga as exigências da norma ABNT NBR 5410."
+                      "text": "Circuitos de produtos e serviços, tomadas e aparelhos de grande porte devem ser separados. Em áreas úmidas, como cozinhas e banheiros, use dispositivos de proteção adequados e siga as exigências da norma ABNT NBR 5410."
                     },
                     "size": 1
                   },
@@ -167,13 +167,13 @@
       "name": "Tinta acrílica ou látex: qual usar em cada ambiente?",
       "url_key": "tinta-acrilica-ou-latex",
       "status": 1,
-      "category": "Tintas",
+      "category": "produtos e serviços",
       "tags": [
         "Acabamento",
         "Dicas"
       ],
       "short_description": "Entenda quando vale usar cada tipo de tinta e como preparar a parede para um acabamento melhor.",
-      "thumbnail": "images/blog-tintas.svg",
+      "thumbnail": "images/blog-produtos e serviços.svg",
       "meta_title": "Tinta acrílica ou látex | Loja Exemplo",
       "meta_description": "Entenda quando vale usar tinta acrílica ou látex e como preparar a parede para um acabamento melhor.",
       "content": [
@@ -218,13 +218,13 @@
       "name": "Checklist de materiais para começar uma reforma",
       "url_key": "checklist-materiais-para-reforma",
       "status": 1,
-      "category": "Obras",
+      "category": "produtos e serviçoss",
       "tags": [
         "Reforma",
         "Dicas"
       ],
-      "short_description": "Uma lista simples para não esquecer os itens básicos antes de começar a obra.",
-      "thumbnail": "images/blog-obras.svg",
+      "short_description": "Uma lista simples para não esquecer os itens básicos antes de começar a produtos e serviços.",
+      "thumbnail": "images/blog-produtos e serviçoss.svg",
       "meta_title": "Checklist de materiais para reforma | Loja Exemplo",
       "meta_description": "Uma lista simples para não esquecer os itens básicos antes de começar uma reforma.",
       "content": [
@@ -240,21 +240,21 @@
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Organize a reforma por etapas: demolição, alvenaria, instalações, reboco, pintura e acabamento. Para cada etapa, anote os materiais e as ferramentas necessárias."
+                      "text": "Organize a reforma por etapas: demolição, alvenaria, instalações, reboco, pintura e acabamento. Para cada etapa, anote os materiais e as produtos e serviços necessárias."
                     },
                     "size": 1
                   },
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Na parte estrutural, entram cimento, areia, brita, tijolos ou blocos. Nas instalações, tubulações, fios, cabos, tomadas e registros. Na finalização, massa, tinta, pincéis, rodapés e ferragens."
+                      "text": "Na parte estrutural, entram produtos e serviços, produtos e serviços, produtos e serviços, produtos e serviços ou blocos. Nas instalações, tubulações, fios, cabos, tomadas e registros. Na finalização, massa, tinta, pincéis, rodapés e produtos e serviços."
                     },
                     "size": 1
                   },
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Compre o essencial primeiro e deixe os acabamentos para depois das medições finais. Monte a lista com a nossa equipe: indicamos quantidades e opções que cabem no seu orçamento."
+                      "text": "Compre o essencial primeiro e deixe os acabamentos para depois das medições finais. Monte a lista com a nossa equipe: indicamos quantidades e opções que cabem no seu produtos e serviços."
                     },
                     "size": 1
                   }
@@ -269,14 +269,14 @@
       "name": "Como evitar infiltrações na cobertura",
       "url_key": "como-evitar-infiltracoes-na-cobertura",
       "status": 1,
-      "category": "Coberturas",
+      "category": "produtos e serviços",
       "tags": [
         "Dicas"
       ],
-      "short_description": "Telhas, calhas e impermeabilização: os cuidados que protegem o telhado e o interior da casa.",
-      "thumbnail": "images/blog-coberturas.svg",
+      "short_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+      "thumbnail": "images/blog-produtos e serviços.svg",
       "meta_title": "Como evitar infiltrações na cobertura | Loja Exemplo",
-      "meta_description": "Telhas, calhas e impermeabilização: os cuidados que protegem o telhado e o interior da casa.",
+      "meta_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
       "content": [
         {
           "id": "r5",
@@ -297,14 +297,14 @@
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Limpe as calhas regularmente, verifique a inclinação das telhas e confira a vedação em torno de chaminés, claraboias e passagens de tubos."
+                      "text": "Limpe as produtos e serviços regularmente, verifique a inclinação das produtos e serviços e confira a vedação em torno de chaminés, claraboias e passagens de tubos."
                     },
                     "size": 1
                   },
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Ao trocar a cobertura, escolha telhas e acessórios do mesmo sistema e conte com mão de obra especializada. Aqui você encontra telhas, cumeeiras, calhas, rufos e mantas impermeabilizantes."
+                      "text": "Ao trocar a cobertura, escolha produtos e serviços e acessórios do mesmo sistema e conte com mão de produtos e serviços especializada. Aqui você encontra produtos e serviços, cumeeiras, produtos e serviços, rufos e mantas impermeabilizantes."
                     },
                     "size": 1
                   }
@@ -316,16 +316,16 @@
       ]
     },
     {
-      "name": "Ferramentas essenciais para pequenos reparos em casa",
-      "url_key": "ferramentas-essenciais-pequenos-reparos",
+      "name": "produtos e serviços essenciais para pequenos reparos em casa",
+      "url_key": "produtos e serviços-essenciais-pequenos-reparos",
       "status": 1,
-      "category": "Ferramentas",
+      "category": "produtos e serviços",
       "tags": [
         "Dicas"
       ],
       "short_description": "Um kit enxuto que resolve a maior parte dos consertos do dia a dia.",
-      "thumbnail": "images/blog-ferramentas.svg",
-      "meta_title": "Ferramentas essenciais para pequenos reparos | Loja Exemplo",
+      "thumbnail": "images/blog-produtos e serviços.svg",
+      "meta_title": "produtos e serviços essenciais para pequenos reparos | Loja Exemplo",
       "meta_description": "Um kit enxuto que resolve a maior parte dos consertos do dia a dia.",
       "content": [
         {
@@ -347,7 +347,7 @@
                   {
                     "type": "paragraph",
                     "data": {
-                      "text": "Vale acrescentar estilete, lixa, espátula e uma fita isolante. Guarde tudo em uma caixa organizada e mantenha as ferramentas limpas para aumentar a vida útil."
+                      "text": "Vale acrescentar estilete, lixa, espátula e uma fita isolante. Guarde tudo em uma caixa organizada e mantenha as produtos e serviços limpas para aumentar a vida útil."
                     },
                     "size": 1
                   },

@@ -15,14 +15,14 @@
     "status": 0
   },
   {
-    "name": "Hidráulica",
-    "url_key": "hidraulica",
+    "name": "Categoria 1",
+    "url_key": "categoria-1",
     "status": 1,
     "image": "images/categoria-hidraulica.svg",
-    "short_description": "Tubos, conexões e acessórios para levar água até onde você precisar.",
-    "meta_title": "Hidráulica em São Paulo | Loja Exemplo",
-    "meta_description": "Tubos, conexões, torneiras, registros, bombas e filtros em São Paulo - SP. Orientação na hora da compra e os menores preços.",
-    "meta_keywords": "hidráulica, tubos, conexões, torneiras, bombas, São Paulo - SP",
+    "short_description": "Descrição da categoria 1.",
+    "meta_title": "Categoria 1 | Loja Exemplo",
+    "meta_description": "Descrição da categoria 1.",
+    "meta_keywords": "categoria 1, produtos, Loja Exemplo",
     "description": [
       {
         "id": "r__hidraulica",
@@ -36,7 +36,7 @@
                 {
                   "type": "header",
                   "data": {
-                    "text": "Hidráulica",
+                    "text": "Categoria 1",
                     "level": 2
                   },
                   "size": 1
@@ -78,14 +78,14 @@
     ]
   },
   {
-    "name": "Elétrica",
-    "url_key": "eletrica",
+    "name": "Categoria 2",
+    "url_key": "categoria-2",
     "status": 1,
     "image": "images/categoria-eletrica.svg",
-    "short_description": "Fios, cabos, disjuntores e componentes para instalações seguras.",
-    "meta_title": "Elétrica em São Paulo | Loja Exemplo",
-    "meta_description": "Fios, cabos, disjuntores, tomadas, interruptores e luminárias para instalações residenciais, comerciais e industriais em São Paulo.",
-    "meta_keywords": "elétrica, fios, cabos, disjuntores, tomadas, luminárias, São Paulo",
+    "short_description": "Descrição da categoria 2.",
+    "meta_title": "Categoria 2 | Loja Exemplo",
+    "meta_description": "Descrição da categoria 2.",
+    "meta_keywords": "categoria 2, produtos, Loja Exemplo",
     "description": [
       {
         "id": "r__eletrica",
@@ -99,7 +99,7 @@
                 {
                   "type": "header",
                   "data": {
-                    "text": "Elétrica",
+                    "text": "Categoria 2",
                     "level": 2
                   },
                   "size": 1
@@ -107,7 +107,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Um departamento completo para instalações elétricas residenciais, comerciais e industriais, com materiais de qualidade e ajuda para escolher a especificação correta."
+                    "text": "Descrição da categoria 2."
                   },
                   "size": 1
                 },
@@ -134,28 +134,28 @@
     ]
   },
   {
-    "name": "Tintas e acabamento",
-    "url_key": "tintas",
+    "name": "Categoria 3",
+    "url_key": "categoria-3",
     "status": 1,
-    "image": "images/categoria-tintas.svg",
-    "short_description": "Tintas, massas, vernizes e ferramentas para deixar tudo bonito.",
-    "meta_title": "Tintas e acabamento em São Paulo | Loja Exemplo",
-    "meta_description": "Tintas para parede, madeira e metal, massas, vernizes, pincéis e rolos em São Paulo - SP.",
-    "meta_keywords": "tintas, acrílica, látex, massa corrida, verniz, pincéis, São Paulo",
+    "image": "images/categoria-produtos e serviços.svg",
+    "short_description": "Descrição da categoria 3.",
+    "meta_title": "Categoria 3 | Loja Exemplo",
+    "meta_description": "Descrição da categoria 3.",
+    "meta_keywords": "categoria 3, produtos, Loja Exemplo",
     "description": [
       {
-        "id": "r__tintas",
+        "id": "r__produtos e serviços",
         "columns": [
           {
             "size": 1,
-            "id": "c__tintas",
+            "id": "c__produtos e serviços",
             "data": {
               "time": 1729900000000,
               "blocks": [
                 {
                   "type": "header",
                   "data": {
-                    "text": "Tintas e acabamento",
+                    "text": "Categoria 3",
                     "level": 2
                   },
                   "size": 1
@@ -163,7 +163,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Do preparo da superfície ao acabamento final: tintas para paredes, madeira e metal, além de todos os acessórios para aplicação."
+                    "text": "Descrição da categoria 3."
                   },
                   "size": 1
                 },
@@ -172,7 +172,7 @@
                   "data": {
                     "style": "unordered",
                     "items": [
-                      "Tintas para parede, madeira e metal",
+                      "Produtos da categoria 3",
                       "Massas corridas, vernizes e seladores",
                       "Pincéis, rolos e lixas",
                       "Solventes e aditivos"
@@ -190,28 +190,28 @@
     ]
   },
   {
-    "name": "Ferragens",
-    "url_key": "ferragens",
+    "name": "Categoria 4",
+    "url_key": "categoria-4",
     "status": 1,
-    "image": "images/categoria-ferragens.svg",
-    "short_description": "Fechaduras, parafusos e ferragens para portas, janelas e móveis.",
-    "meta_title": "Ferragens em São Paulo | Loja Exemplo",
-    "meta_description": "Fechaduras, cadeados, dobradiças, parafusos, pregos, buchas e ferragens em São Paulo - SP.",
-    "meta_keywords": "ferragens, fechaduras, dobradiças, parafusos, buchas, São Paulo",
+    "image": "images/categoria-produtos e serviços.svg",
+    "short_description": "Descrição da categoria 4.",
+    "meta_title": "Categoria 4 | Loja Exemplo",
+    "meta_description": "Descrição da categoria 4.",
+    "meta_keywords": "categoria 4, produtos, Loja Exemplo",
     "description": [
       {
-        "id": "r__ferragens",
+        "id": "r__produtos e serviços",
         "columns": [
           {
             "size": 1,
-            "id": "c__ferragens",
+            "id": "c__produtos e serviços",
             "data": {
               "time": 1729900000000,
               "blocks": [
                 {
                   "type": "header",
                   "data": {
-                    "text": "Ferragens",
+                    "text": "Categoria 4",
                     "level": 2
                   },
                   "size": 1
@@ -219,7 +219,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Peças pequenas que fazem toda a diferença no resultado da obra. Temos ferragens e fixadores para todos os tipos de projeto."
+                    "text": "Descrição da categoria 4."
                   },
                   "size": 1
                 },
@@ -228,10 +228,10 @@
                   "data": {
                     "style": "unordered",
                     "items": [
-                      "Fechaduras, cadeados e dobradiças",
+                      "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
                       "Parafusos, pregos, buchas e arruelas",
                       "Correntes, cabos e ganchos",
-                      "Ferragens para portas, janelas e móveis"
+                      "Produtos da categoria 4"
                     ]
                   },
                   "size": 1
@@ -246,28 +246,28 @@
     ]
   },
   {
-    "name": "Ferramentas",
-    "url_key": "ferramentas",
+    "name": "Categoria 5",
+    "url_key": "categoria-5",
     "status": 1,
-    "image": "images/categoria-ferramentas.svg",
-    "short_description": "Ferramentas manuais e elétricas para cada etapa do trabalho.",
-    "meta_title": "Ferramentas em São Paulo | Loja Exemplo",
-    "meta_description": "Furadeiras, brocas, chaves, alicates, lixadeiras, serras e medidores em São Paulo - SP.",
-    "meta_keywords": "ferramentas, furadeira, brocas, chaves, lixadeira, São Paulo",
+    "image": "images/categoria-produtos e serviços.svg",
+    "short_description": "Descrição da categoria 5.",
+    "meta_title": "Categoria 5 | Loja Exemplo",
+    "meta_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "categoria 5, produtos, Loja Exemplo",
     "description": [
       {
-        "id": "r__ferramentas",
+        "id": "r__produtos e serviços",
         "columns": [
           {
             "size": 1,
-            "id": "c__ferramentas",
+            "id": "c__produtos e serviços",
             "data": {
               "time": 1729900000000,
               "blocks": [
                 {
                   "type": "header",
                   "data": {
-                    "text": "Ferramentas",
+                    "text": "Categoria 5",
                     "level": 2
                   },
                   "size": 1
@@ -275,7 +275,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Equipamentos e ferramentas para o profissional e para o faça-você-mesmo, com opções para aluguel, corte, fixação e medição."
+                    "text": "Descrição da categoria 5."
                   },
                   "size": 1
                 },
@@ -302,14 +302,14 @@
     ]
   },
   {
-    "name": "Materiais de construção",
-    "url_key": "materiais-de-construcao",
+    "name": "Categoria 6",
+    "url_key": "categoria-6",
     "status": 1,
     "image": "images/categoria-materiais.svg",
-    "short_description": "Cimento, areia, brita, tijolos e o básico de toda obra.",
-    "meta_title": "Materiais de construção em São Paulo | Loja Exemplo",
-    "meta_description": "Cimento, cal, gesso, areia, brita, tijolos, blocos, adesivos e impermeabilizantes em São Paulo - SP.",
-    "meta_keywords": "materiais de construção, cimento, areia, brita, tijolos, São Paulo",
+    "short_description": "Descrição da categoria 6.",
+    "meta_title": "Categoria 6 | Loja Exemplo",
+    "meta_description": "produtos e serviços, cal, gesso, produtos e serviços, produtos e serviços, produtos e serviços, blocos, adesivos e impermeabilizantes em Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "categoria 6, produtos, Loja Exemplo",
     "description": [
       {
         "id": "r__materiais",
@@ -323,7 +323,7 @@
                 {
                   "type": "header",
                   "data": {
-                    "text": "Materiais de construção",
+                    "text": "Categoria 6",
                     "level": 2
                   },
                   "size": 1
@@ -331,7 +331,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Os insumos essenciais para fundações, alvenaria, reboco e acabamento, disponíveis para retirada na loja ou entrega no local da obra."
+                    "text": "Os insumos essenciais para fundações, alvenaria, reboco e acabamento, disponíveis para retirada na loja ou entrega no local da produtos e serviços."
                   },
                   "size": 1
                 },
@@ -340,9 +340,9 @@
                   "data": {
                     "style": "unordered",
                     "items": [
-                      "Cimento, cal e gesso",
-                      "Areia, brita e pedra",
-                      "Tijolos, blocos e lajotas",
+                      "produtos e serviços, cal e gesso",
+                      "produtos e serviços, produtos e serviços e pedra",
+                      "produtos e serviços, blocos e lajotas",
                       "Adesivos, argamassas e impermeabilizantes"
                     ]
                   },
@@ -358,28 +358,28 @@
     ]
   },
   {
-    "name": "Coberturas",
-    "url_key": "coberturas",
+    "name": "Categoria 7",
+    "url_key": "categoria-7",
     "status": 1,
-    "image": "images/categoria-coberturas.svg",
-    "short_description": "Telhas, calhas e acessórios para proteger sua construção.",
-    "meta_title": "Coberturas em São Paulo | Loja Exemplo",
-    "meta_description": "Telhas, cumeeiras, calhas, rufos, mantas e isolantes térmicos em São Paulo - SP.",
-    "meta_keywords": "coberturas, telhas, calhas, rufos, impermeabilização, São Paulo",
+    "image": "images/categoria-produtos e serviços.svg",
+    "short_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_title": "Categoria 7 | Loja Exemplo",
+    "meta_description": "produtos e serviços, cumeeiras, produtos e serviços, rufos, mantas e isolantes térmicos em Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "categoria 7, produtos, Loja Exemplo",
     "description": [
       {
-        "id": "r__coberturas",
+        "id": "r__produtos e serviços",
         "columns": [
           {
             "size": 1,
-            "id": "c__coberturas",
+            "id": "c__produtos e serviços",
             "data": {
               "time": 1729900000000,
               "blocks": [
                 {
                   "type": "header",
                   "data": {
-                    "text": "Coberturas",
+                    "text": "Categoria 7",
                     "level": 2
                   },
                   "size": 1
@@ -387,7 +387,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Soluções para telhados e coberturas, com telhas, calhas, rufos e materiais de vedação para evitar infiltrações."
+                    "text": "Descrição da categoria 7."
                   },
                   "size": 1
                 },
@@ -396,8 +396,8 @@
                   "data": {
                     "style": "unordered",
                     "items": [
-                      "Telhas e cumeeiras",
-                      "Calhas, rufos e goteiras",
+                      "produtos e serviços e cumeeiras",
+                      "produtos e serviços, rufos e goteiras",
                       "Mantas e isolantes térmicos",
                       "Acessórios para telhado"
                     ]
@@ -414,14 +414,14 @@
     ]
   },
   {
-    "name": "Iluminação",
-    "url_key": "iluminacao",
+    "name": "Categoria 8",
+    "url_key": "categoria-8",
     "status": 1,
     "image": "images/categoria-iluminacao.svg",
     "short_description": "Lâmpadas, luminárias e refletores para todos os ambientes.",
-    "meta_title": "Iluminação em São Paulo | Loja Exemplo",
-    "meta_description": "Lâmpadas LED, luminárias, arandelas, plafons, refletores e fitas LED em São Paulo - SP.",
-    "meta_keywords": "iluminação, lâmpadas LED, luminárias, refletores, fitas LED, São Paulo",
+    "meta_title": "Categoria 8 | Loja Exemplo",
+    "meta_description": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "categoria 8, produtos, Loja Exemplo",
     "description": [
       {
         "id": "r__iluminacao",
@@ -435,7 +435,7 @@
                 {
                   "type": "header",
                   "data": {
-                    "text": "Iluminação",
+                    "text": "Categoria 8",
                     "level": 2
                   },
                   "size": 1
@@ -452,7 +452,7 @@
                   "data": {
                     "style": "unordered",
                     "items": [
-                      "Lâmpadas LED de diferentes potências",
+                      "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
                       "Luminárias, arandelas e plafons",
                       "Refletores e fitas LED",
                       "Fontes, drivers e acessórios"
@@ -470,14 +470,14 @@
     ]
   },
   {
-    "name": "Orçamento e entrega",
-    "url_key": "orcamento-e-entrega",
+    "name": "Categoria 9",
+    "url_key": "categoria-9",
     "status": 1,
     "image": "images/categoria-orcamento.svg",
-    "short_description": "Peça seu orçamento pelo WhatsApp e combine a retirada ou entrega.",
-    "meta_title": "Orçamento e entrega | Loja Exemplo",
-    "meta_description": "Orçamento rápido pelo WhatsApp, retirada nas lojas 1 e 2 e entrega na região de São Paulo.",
-    "meta_keywords": "orçamento, entrega, retirada, São Paulo, Loja Exemplo",
+    "short_description": "Peça seu produtos e serviços pelo WhatsApp e combine a retirada ou entrega.",
+    "meta_title": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_description": "produtos e serviços rápido pelo WhatsApp, retirada nas lojas 1 e 2 e entrega na região de Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
+    "meta_keywords": "produtos e serviços, entrega, retirada, Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
     "description": [
       {
         "id": "r__orcamento",
@@ -491,7 +491,7 @@
                 {
                   "type": "header",
                   "data": {
-                    "text": "Orçamento e entrega",
+                    "text": "Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
                     "level": 2
                   },
                   "size": 1
@@ -499,7 +499,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "Não encontrou um produto ou quer comparar opções? Fale com a nossa equipe: montamos o orçamento e combinamos a melhor forma de entregar ou você retira na loja."
+                    "text": "Não encontrou um produto ou quer comparar opções? Fale com a nossa equipe: montamos o produtos e serviços e combinamos a melhor forma de entregar ou você retira na loja."
                   },
                   "size": 1
                 },
@@ -508,9 +508,9 @@
                   "data": {
                     "style": "unordered",
                     "items": [
-                      "Orçamento rápido pelo WhatsApp",
+                      "produtos e serviços rápido pelo WhatsApp",
                       "Retirada nas lojas 1 e 2",
-                      "Entrega na região de São Paulo",
+                      "Entrega na região de Conteúdo de demonstração. Substitua pelos dados da sua empresa.",
                       "Ajuda para escolher o material certo"
                     ]
                   },
