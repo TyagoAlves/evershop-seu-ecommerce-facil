@@ -41,8 +41,12 @@ export default function HcMenu({ areaProps }: HcMenuProps) {
     ? (settings.links as MenuLink[])
     : [];
   const isMobile = areaProps?.variant === 'mobile';
+  const isDesktop = areaProps?.variant === 'desktop';
   const isOpen = areaProps?.isOpen !== false;
 
+  // O widget só faz sentido dentro das áreas do cabeçalho. Se for solto no
+  // corpo da página (área "content"), não renderiza para não duplicar o menu.
+  if (!isMobile && !isDesktop) return null;
   if (isMobile && !isOpen) return null;
 
   const renderLink = (link: MenuLink, index: number) => {

@@ -1,8 +1,10 @@
 import Area from '@components/common/Area.js';
+import { useAppState } from '@components/common/context/app.js';
 import React, { useEffect, useState } from 'react';
 import { company } from './generated/company.js';
 import { HcIcon } from './HcIcon.js';
 import { HcLogo } from './HcLogo.js';
+import { NAV } from './site.js';
 
 const SITE = {
   addressShort: company.address.short,
@@ -12,8 +14,17 @@ const SITE = {
   whatsappHref: `https://wa.me/${company.whatsapp.number}?text=${encodeURIComponent(company.whatsapp.defaultMessage)}`
 };
 
+function hasWidgetIn(areaId, widgets) {
+  return Array.isArray(widgets) && widgets.some((w) => Array.isArray(w.areaId) && w.areaId.includes(areaId));
+}
+
 export function Header() {
   const [open, setOpen] = useState(false);
+  const { widgets } = useAppState() || {};
+  // O menu do manifesto é o padrão: Ele aparece quando nenhum widget de menu
+  // foi posicionado na área global do cabeçalho. Assim o site nunca fica sem nav.
+  const hasDesktopMenu = hasWidgetIn('headerMenuDesktop', widgets);
+  const hasMobileMenu = hasWidgetIn('headerMenuMobile', widgets);
 
   useEffect(() => {
     document.body.style.overflow = open ? 'hidden' : '';
@@ -46,6 +57,15 @@ export function Header() {
           <HcLogo />
 
           <div className="le-header__nav-slot">
+            {!hasDesktopMenu && NAV.length ? (
+              <nav aria-label="Menu principal" className="le-header__nav">
+                {NAV.map((item) => (
+                  <a key={item.href || item.label} className="le-header__nav-link" href={item.href || '#'}>
+                    {item.label}
+                  </a>
+                ))}
+              </nav>
+            ) : null}
             <Area
               id="headerMenuDesktop"
               noOuter
@@ -82,6 +102,21 @@ export function Header() {
       {open ? (
         <nav aria-label="Menu mobile" className="le-mobile-nav">
           <div className="le-container le-mobile-nav__inner">
+            {!hasMobileMenu && NAV.length ? (
+              <React.Fragment>
+                {NAV.map((item) => (
+                  <a
+                    key={item.href || item.label}
+                    className="le-mobile-nav__link"
+                    href={item.href || '#'}
+                    onClick={() => setOpen(false)}
+                  >
+                    {item.label}
+                    <HcIcon name="arrow" />
+                  </a>
+                ))}
+              </React.Fragment>
+            ) : null}
             <Area
               id="headerMenuMobile"
               noOuter
