@@ -1,5 +1,6 @@
 import Area from '@components/common/Area.js';
 import { useAppState } from '@components/common/context/app.js';
+import { useIsInPageBuilderIframe } from '@components/common/page-builder/pageBuilderMode.js';
 import React, { useEffect, useState } from 'react';
 import { company } from './generated/company.js';
 import { HcIcon } from './HcIcon.js';
@@ -20,7 +21,11 @@ function hasWidgetIn(areaId, widgets) {
 
 export function Header() {
   const [open, setOpen] = useState(false);
+  const inPageBuilder = useIsInPageBuilderIframe();
   const { widgets } = useAppState() || {};
+  // No editor, mantemos o menu mobile aberto para que os links possam ser
+  // vistos e editados no canvas (modo celular). Na loja real, abre ao clicar.
+  const mobileOpen = inPageBuilder || open;
   // O menu do manifesto é o padrão: Ele aparece quando nenhum widget de menu
   // foi posicionado na área global do cabeçalho. Assim o site nunca fica sem nav.
   const hasDesktopMenu = hasWidgetIn('headerMenuDesktop', widgets);
@@ -87,19 +92,19 @@ export function Header() {
               <span>Solicitar orçamento</span>
             </a>
             <button
-              aria-expanded={open}
-              aria-label={open ? 'Fechar menu' : 'Abrir menu'}
+              aria-expanded={mobileOpen}
+              aria-label={mobileOpen ? 'Fechar menu' : 'Abrir menu'}
               className="le-header__menu-button"
               onClick={() => setOpen(!open)}
               type="button"
             >
-              <HcIcon name={open ? 'close' : 'menu'} />
+              <HcIcon name={mobileOpen ? 'close' : 'menu'} />
             </button>
           </div>
         </div>
       </div>
 
-      {open ? (
+      {mobileOpen ? (
         <nav aria-label="Menu mobile" className="le-mobile-nav">
           <div className="le-container le-mobile-nav__inner">
             {!hasMobileMenu && NAV.length ? (
@@ -123,7 +128,7 @@ export function Header() {
               isGlobal
               editableInPageBuilder
               variant="mobile"
-              isOpen={open}
+              isOpen={mobileOpen}
               onNavigate={() => setOpen(false)}
             />
             <a className="le-btn le-whatsapp le-mobile-nav__cta" href={SITE.whatsappHref} target="_blank" rel="noreferrer">
