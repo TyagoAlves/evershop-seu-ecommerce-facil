@@ -13,7 +13,7 @@ const COMPANY_FILE = path.join(ROOT, 'config', 'generated', 'company.json');
 
 const LEGACY = {
   blog: "description: 'Dicas e orientações de hidráulica, elétrica, tintas e manutenção para sua obra em Sua Cidade.'",
-  listing: "description: 'Catálogo de materiais de construção: hidráulica, elétrica, tintas, ferragens e ferramentas em Sua Cidade. Valores sob consulta.'",
+  listing: "description: 'Conheça nosso catálogo. Valores e disponibilidade sob consulta.'",
   cart: "description: 'Monte sua lista de materiais e solicite um orçamento pelo WhatsApp na Loja Exemplo.'"
 };
 

@@ -12,8 +12,8 @@ export function ProductListingInfo() {
           <h1 className="le-page-hero__title">Todos os produtos</h1>
           <div className="le-page-hero__description">
             <p>
-              Hidráulica, elétrica, tintas, ferragens, ferramentas e materiais
-              de construção. Valores e disponibilidade sob consulta.
+              Conheça nosso catálogo e encontre o que você precisa.
+              Valores e disponibilidade sob consulta.
             </p>
           </div>
           <div className="le-page-hero__actions">

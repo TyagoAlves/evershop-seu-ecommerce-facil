@@ -9,11 +9,11 @@ export default function BlogHomeHeader() {
       <div className="le-container le-page-hero__inner">
         <div className="le-page-hero__content">
           <span className="le-eyebrow">Blog &amp; dicas</span>
-          <h1 className="le-page-hero__title">Orientação para sua obra</h1>
+          <h1 className="le-page-hero__title">Dicas e novidades</h1>
           <div className="le-page-hero__description">
             <p>
-              Dicas práticas de hidráulica, elétrica, pintura e manutenção,
-              escritas por quem atende todos os dias em Sua Cidade.
+              Conteúdos úteis e novidades, escritos por quem conhece o
+              assunto e atende você todos os dias.
             </p>
           </div>
           <div className="le-page-hero__actions">

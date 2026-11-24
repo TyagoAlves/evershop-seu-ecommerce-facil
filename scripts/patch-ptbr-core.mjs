@@ -24,7 +24,7 @@ const files = [
 const companyFile = new URL('../config/generated/company.json', import.meta.url);
 const fallbackDescriptions = {
   blog: 'Dicas e orientações de hidráulica, elétrica, tintas e manutenção para sua obra em Sua Cidade.',
-  listing: 'Catálogo de materiais de construção: hidráulica, elétrica, tintas, ferragens e ferramentas em Sua Cidade. Valores sob consulta.',
+  listing: 'Conheça nosso catálogo. Valores e disponibilidade sob consulta.',
   cart: 'Monte sua lista de materiais e solicite um orçamento pelo WhatsApp na Loja Exemplo.'
 };
 

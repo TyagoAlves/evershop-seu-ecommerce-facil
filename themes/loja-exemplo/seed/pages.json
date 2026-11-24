@@ -3,9 +3,9 @@
     "status": true,
     "url_key": "empresa",
     "name": "Empresa",
-    "meta_title": "Sobre a Loja Exemplo | Materiais de construção em São Paulo",
-    "meta_description": "Conheça a Loja Exemplo: materiais de construção em São Paulo - SP, com hidráulica, elétrica, tintas, ferragens e os menores preços.",
-    "meta_keywords": "Loja Exemplo, empresa, São Paulo, materiais de construção",
+    "meta_title": "Sobre a Loja Exemplo | Sua empresa",
+    "meta_description": "Conheça a Loja Exemplo: seu e-commerce de exemplo com catálogo, conteúdo e atendimento por WhatsApp.",
+    "meta_keywords": "Loja Exemplo, empresa, e-commerce, catálogo",
     "content": [
       {
         "id": "r__empresa",
@@ -27,7 +27,7 @@
                 {
                   "type": "paragraph",
                   "data": {
-                    "text": "A Loja Exemplo é uma loja de materiais de construção localizada na Rua Exemplo, 100, Centro, São Paulo - SP. Atuamos com hidráulica, elétrica, tintas, ferragens, ferramentas e todo o básico de obra nas lojas 1 e 2, no mesmo endereço."
+                    "text": "A Loja Exemplo é um e-commerce demonstrativo. Substitua este texto, o endereço e os dados pelos da sua empresa no manifesto de companies/."
                   },
                   "size": 1
                 },
@@ -53,7 +53,7 @@
                     "items": [
                       "Os menores preços da região",
                       "Atendimento que ajuda de verdade",
-                      "Tudo no mesmo lugar: hidráulica, elétrica, tintas, ferragens, ferramentas e materiais de construção"
+                      "Tudo no mesmo lugar: catálogo, conteúdo e atendimento"
                     ]
                   },
                   "size": 1
@@ -155,7 +155,7 @@
     "url_key": "departamentos",
     "name": "Departamentos",
     "meta_title": "Departamentos | Loja Exemplo",
-    "meta_description": "Conheça os departamentos da Loja Exemplo: hidráulica, elétrica, tintas, ferragens, ferramentas, materiais de construção, coberturas e iluminação.",
+    "meta_description": "Conheça os departamentos da Loja Exemplo e encontre o que você precisa.",
     "meta_keywords": "departamentos, hidráulica, elétrica, tintas, ferragens, ferramentas, São Paulo",
     "content": [
       {
